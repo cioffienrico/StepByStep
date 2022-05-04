@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e": {
+      "ProjectGuid": "3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e",
+      "DisplayName": "StepByStep.WebApi",
+      "ColorIndex": 0
+    },
+    "6b7a9df8-49be-49b9-8730-501fc03a0b22": {
+      "ProjectGuid": "6b7a9df8-49be-49b9-8730-501fc03a0b22",
+      "DisplayName": "StepByStep.Domain",
+      "ColorIndex": 1
+    },
+    "808b19e7-0530-49c7-9c9d-e138168c281a": {
+      "ProjectGuid": "808b19e7-0530-49c7-9c9d-e138168c281a",
+      "DisplayName": "StepByStep.Application",
+      "ColorIndex": 2
+    },
+    "acc4164a-0b8d-414b-a186-73c0f29ea4d4": {
+      "ProjectGuid": "acc4164a-0b8d-414b-a186-73c0f29ea4d4",
+      "DisplayName": "StepByStep.Infrastructure",
+      "ColorIndex": 3
+    },
+    "6bef550b-9498-4231-ae59-27d0f88e820e": {
+      "ProjectGuid": "6bef550b-9498-4231-ae59-27d0f88e820e",
+      "DisplayName": "StepByStep.Tests",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "cfe4a23b-5f9e-4a07-bf53-e8ca7034fb70": {
+      "ProjectGuid": "cfe4a23b-5f9e-4a07-bf53-e8ca7034fb70",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

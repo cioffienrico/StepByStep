@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>7ce491af-73cb-463a-8712-bb7a313ee30f</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
+	<PackageReference Include="Autofac.Configuration" Version="4.1.0" />
+	<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+	<PackageReference Include="AutoMapper" Version="9.0.0" />
+	<PackageReference Include="FluentValidation" Version="11.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.2" />
+	<PackageReference Include="NewtonSoft.Json" Version="12.0.3" />
+	<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.2" />
+	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+	<PackageReference Include="Serilog.AspNetCore" Version="3.3.0-dev-00152" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StepByStep.Application\StepByStep.Application.csproj" />
+    <ProjectReference Include="..\StepByStep.Domain\StepByStep.Domain.csproj" />
+    <ProjectReference Include="..\StepByStep.Infrastructure\StepByStep.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DependencyInjection\" />
+    <Folder Include="Filters\" />
+    <Folder Include="Infrastructure\Extensions\" />
+    <Folder Include="Model\" />
+    <Folder Include="Module\" />
+    <Folder Include="UseCases\" />
+    <Folder Include="Notification\" />
+  </ItemGroup>
+
+</Project>

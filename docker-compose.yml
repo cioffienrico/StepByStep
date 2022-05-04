@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  stepbystep.webapi:
+    image: ${DOCKER_REGISTRY-}stepbystepwebapi
+    build:
+      context: .
+      dockerfile: StepByStep.WebApi/Dockerfile

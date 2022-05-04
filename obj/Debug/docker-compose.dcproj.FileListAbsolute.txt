@@ -1,0 +1,12 @@
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\bin\Debug\StepByStep.WebApi.deps.json
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\bin\Debug\StepByStep.WebApi.runtimeconfig.json
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\bin\Debug\appsettings.Development.json
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\bin\Debug\appsettings.json
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\bin\Debug\StepByStep.WebApi.exe
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\bin\Debug\StepByStep.WebApi.dll
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\bin\Debug\StepByStep.WebApi.pdb
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\bin\Debug\StepByStep.WebApi.runtimeconfig.dev.json

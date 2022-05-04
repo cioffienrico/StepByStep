@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UwEIXmzPhNzcCZTLpzBooAiKj8QyTtKe39qn/t3GL8OR5pVeitOnqfNuClr6vCEVsnqmo542ypmu6VC1F0cAlA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\Visual Studio\\Projetos\\StepByStep\\StepByStep.Application\\StepByStep.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\fluentvalidation\\11.0.0\\fluentvalidation.11.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

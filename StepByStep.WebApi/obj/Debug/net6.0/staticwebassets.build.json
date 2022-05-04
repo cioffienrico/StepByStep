@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "y7BjnAmtU9I9ZfNgQIn5U7Dw21cDrleBROp1C4FvlAM=",
+  "Source": "StepByStep.WebApi",
+  "BasePath": "_content/StepByStep.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

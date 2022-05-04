@@ -1,0 +1,17 @@
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\bin\Debug\net6.0\StepByStep.Infrastructure.deps.json
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\bin\Debug\net6.0\StepByStep.Infrastructure.dll
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\bin\Debug\net6.0\ref\StepByStep.Infrastructure.dll
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\bin\Debug\net6.0\StepByStep.Infrastructure.pdb
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\bin\Debug\net6.0\StepByStep.Application.dll
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\bin\Debug\net6.0\StepByStep.Domain.dll
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\bin\Debug\net6.0\StepByStep.Application.pdb
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\bin\Debug\net6.0\StepByStep.Domain.pdb
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\net6.0\StepByStep.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\net6.0\StepByStep.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\net6.0\StepByStep.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\net6.0\StepByStep.Infrastructure.AssemblyInfo.cs
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\net6.0\StepByStep.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\net6.0\StepByStep.Infrastructure.csproj.CopyComplete
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\net6.0\StepByStep.Infrastructure.dll
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\net6.0\ref\StepByStep.Infrastructure.dll
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\net6.0\StepByStep.Infrastructure.pdb

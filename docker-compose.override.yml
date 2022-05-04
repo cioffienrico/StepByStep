@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  stepbystep.webapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - 4532:80
+
+  project-webapi:
+    build:
+      context: .
+      dockerfile: StepByStep.Webapi/Dockerfile
+    environment:
+     CONN: "Host=project-db;Port=5432;Database=postgres;User Id=postgres;Password=postgres"
+    ports:
+      - "5050:80"
+    depends_on:
+      - project-db

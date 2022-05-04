@@ -1,0 +1,35 @@
+services:
+  project-webapi:
+    build:
+      context: C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep
+      dockerfile: StepByStep.Webapi/Dockerfile
+    depends_on:
+      project-db:
+        condition: service_started
+    environment:
+      CONN: Host=project-db;Port=5432;Database=postgres;User Id=postgres;Password=postgres
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 5050
+      protocol: tcp
+  stepbystep.webapi:
+    build:
+      context: C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep
+      dockerfile: StepByStep.WebApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: stepbystepwebapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 4532
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose11934771398908782014_default
