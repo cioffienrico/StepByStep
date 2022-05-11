@@ -13,3 +13,6 @@ C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\
 C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\netcoreapp3.1\StepByStep.Infrastructure.csproj.CopyComplete
 C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\netcoreapp3.1\StepByStep.Infrastructure.dll
 C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\netcoreapp3.1\StepByStep.Infrastructure.pdb
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\bin\Debug\netcoreapp3.1\StepByStep.Infrastructure.runtimeconfig.json
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\bin\Debug\netcoreapp3.1\StepByStep.Infrastructure.runtimeconfig.dev.json
+C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Infrastructure\obj\Debug\netcoreapp3.1\StepByStep.Infrastructure.genruntimeconfig.cache

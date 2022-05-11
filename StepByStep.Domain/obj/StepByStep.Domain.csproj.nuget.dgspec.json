@@ -14,6 +14,7 @@
         "outputPath": "C:\\Users\\PC\\Desktop\\Visual Studio\\Projetos\\StepByStep\\StepByStep.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "C:\\Users\\PC\\Desktop\\Visual Studio\\Projetos\\StepByStep\\NuGet.Config",
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -21,8 +22,8 @@
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/globalwebcsb/_packaging/gcsbvivofeed/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -43,6 +44,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

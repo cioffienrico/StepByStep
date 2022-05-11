@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StepByStep.Domain;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,7 +13,8 @@ namespace StepByStep.Infrastructure.DataAccess.Entities
         public string Rg { get; set; }
         public string Cpf { get; set; }
         public DateTime RegisterDate { get; set; }
-        public bool Ativo { get; set; }
+        public Adress Adress { get; set; }
+        public bool Active { get; set; }
 
     }
 }

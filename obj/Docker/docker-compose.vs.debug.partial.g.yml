@@ -1,33 +1,6 @@
-version: '3.4'
+version: '3.7'
 
 services:
-  project-webapi:
-    image: projectwebapi:dev
-    container_name: StepByStep.WebApi
-    build:
-      target: base
-      labels:
-        com.microsoft.created-by: "visual-studio"
-        com.microsoft.visual-studio.project-name: "StepByStep.WebApi"
-    environment:
-      - DOTNET_USE_POLLING_FILE_WATCHER=1
-      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
-    volumes:
-      - C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Webapi:/app
-      - C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep:/src
-      - C:\Users\PC\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\PC\.nuget\packages\:/root/.nuget/packages:ro
-      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
-      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
-
-    entrypoint: tail -f /dev/null
-    labels:
-      com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Debug/netcoreapp3.1/StepByStep.WebApi.dll\""
-      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
-      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
-    tty: true
   stepbystep.webapi:
     image: stepbystepwebapi:dev
     container_name: StepByStep.WebApi_1
@@ -41,7 +14,7 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.WebApi:/app
+      - C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Webapi:/app
       - C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep:/src
       - C:\Users\PC\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\PC\.nuget\packages\:/root/.nuget/packages:ro

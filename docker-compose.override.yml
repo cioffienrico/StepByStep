@@ -1,20 +1,38 @@
-version: '3.4'
+version: '3.7'
 
 services:
+  
+  stepbystep.database:
+    image: postgres:9.5
+    restart: always
+    environment:  
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=StepByStep
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - stepbystep-network
+  
   stepbystep.webapi:
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=https://+:443;http://+:80
-    ports:
-      - 4532:80
-
-  project-webapi:
     build:
-      context: .
-      dockerfile: StepByStep.Webapi/Dockerfile
+     context: .
+     dockerfile: StepByStep.Webapi/Dockerfile
     environment:
-     CONN: "Host=project-db;Port=5432;Database=postgres;User Id=postgres;Password=postgres"
+      STEPBYSTEP_CONN: Host=stepbystep.database;Port=5432;Database=StepByStep;User Id=postgres;Password=postgres;
     ports:
-      - "5050:80"
+      - 8082:80
+    networks:
+      - stepbystep-network
     depends_on:
-      - project-db
+      - stepbystep.database
+   
+
+volumes:  
+  pgdata:  
+
+networks:
+  stepbystep-network:
+

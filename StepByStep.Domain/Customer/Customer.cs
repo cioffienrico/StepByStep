@@ -5,20 +5,16 @@ using System;
 
 namespace StepByStep.Domain.Customer
 {
-    public class Customer
+    public class Customer : Entity
     {
-        public Guid Id { get; private set; }
-        public string Name { get; private set; }
-        public DateTime Birthday { get; private set; }
-        public string Rg { get; private set; }
-        public string Cpf { get; private set; }
-        public DateTime RegisterDate { get; private set; }
-        public bool Active { get; private set; }
-        
-        public ValidationResult Validations { get; set; }
-
-
-        public Customer(Guid id, string name, DateTime birthday, string rg, string cpf, DateTime registerDate, Boolean active)
+        public string Name { get; set; }
+        public DateTime Birthday { get; set; }
+        public string Rg { get; set; }
+        public string Cpf { get; set; }
+        public DateTime RegisterDate { get; set; }
+        public bool Active { get; set; }
+        public Adress Adress { get; private set; }
+        public Customer(Guid id, string name, DateTime birthday, string rg, string cpf, DateTime registerDate, bool active, Adress adress)
         {
             Id = id;
             Name = name;
@@ -27,7 +23,8 @@ namespace StepByStep.Domain.Customer
             Cpf = cpf;
             RegisterDate = registerDate;
             Active = active;
-            Validations = new CustomerValidator().Validate(this);
+            Adress = adress;
+            Validate(this, new CustomerValidator());
         }
     }
 }

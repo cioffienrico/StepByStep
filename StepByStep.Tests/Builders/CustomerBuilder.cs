@@ -1,4 +1,6 @@
-﻿using StepByStep.Domain.Customer;
+﻿using StepByStep.Domain;
+using StepByStep.Domain.Customer;
+using StepByStep.Test.Builders;
 using System;
 
 namespace StepByStep.Tests.Builders
@@ -13,6 +15,7 @@ namespace StepByStep.Tests.Builders
         public string Cpf;
         public DateTime RegisterDate;
         public bool Active;
+        public Adress Adress;
 
         public static CustomerBuilder New()
         {
@@ -20,11 +23,12 @@ namespace StepByStep.Tests.Builders
             {
                 Id = Guid.NewGuid(),
                 Name = "Enrico Cioffi Gouveia de Oliveira",
-                Birthday = new DateTime(1999, 06, 09),
+                Birthday = DateTime.Today,
                 Rg = "52.238.190-X",
                 Cpf = "473.123.378-05",
-                RegisterDate = new DateTime(02, 05, 2020),
-                Active = true
+                RegisterDate = DateTime.Today,
+                Active = true,
+                Adress = AdressBuilder.New().Build(),
 
         };
         }
@@ -72,10 +76,10 @@ namespace StepByStep.Tests.Builders
         }
 
 
-        public Customer Build()
-        {
-            return new Customer(Id, Name, Birthday, Rg, Cpf, RegisterDate, Active);
-        }
+        public Customer Build() =>
+        
+            new Customer(Id, Name, Birthday, Rg, Cpf, RegisterDate, Active, Adress);
+        
 
     }
 }

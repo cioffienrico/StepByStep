@@ -13,17 +13,17 @@ namespace StepByStep.Infrastructure
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (Environment.GetEnvironmentVariable("DEMOCLEAN_CONN") != null)
+            if (Environment.GetEnvironmentVariable("STEPBYSTEP_CONN") != null)
             {
-                optionsBuilder.UseNpgsql(Environment.GetEnvironmentVariable("DEMOCLEAN_CONN"), npgsqlOptionsAction: options =>
+                optionsBuilder.UseNpgsql(Environment.GetEnvironmentVariable("STEPBYSTEP_CONN"), npgsqlOptionsAction: options =>
                 {
                     options.EnableRetryOnFailure(2, TimeSpan.FromSeconds(5), new List<string>());
-                    options.MigrationsHistoryTable("_MigrationHistory", "DemoClean");
+                    options.MigrationsHistoryTable("_MigrationHistory", "StepByStep");
                 });
             }
             else
             {
-                optionsBuilder.UseInMemoryDatabase("DemoCleanInMemory");
+                optionsBuilder.UseInMemoryDatabase("StepByStepInMemory");
             }
         }
 

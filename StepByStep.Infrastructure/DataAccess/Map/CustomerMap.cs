@@ -10,10 +10,10 @@ namespace StepByStep.Infrastructure.DataAccess.Map
         {
             builder.ToTable("Customer", "StepByStep");
             builder.HasKey(s => s.Id);
-            builder.Property(d => d.Name).IsRequired();
+            builder.Property(d => d.Name).IsRequired().HasMaxLength(200);
             builder.Property(d => d.Birthday).IsRequired();
-            builder.Property(d => d.Name).HasMaxLength(200);
             builder.Property(d => d.Rg).HasMaxLength(100);
+            builder.Property(d => d.Cpf).HasMaxLength(100);
         }
     }
 }

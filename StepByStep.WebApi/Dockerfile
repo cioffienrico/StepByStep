@@ -13,7 +13,7 @@ COPY ["StepByStep.Domain/StepByStep.Domain.csproj", "StepByStep.Domain/"]
 COPY ["StepByStep.Infrastructure/StepByStep.Infrastructure.csproj", "StepByStep.Infrastructure/"]
 RUN dotnet restore "StepByStep.WebApi/StepByStep.WebApi.csproj"
 COPY . .
-WORKDIR "/src/StepByStep.WebApi"
+WORKDIR "/StepByStep.WebApi"
 RUN dotnet build "StepByStep.WebApi.csproj" -c Release -o /app/build
 
 FROM build AS publish

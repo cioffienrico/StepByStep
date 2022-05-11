@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using StepByStep.Domain;
 using StepByStep.Domain.Customer;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace StepByStep.Infrastructure.Mapper
         public MapperProfile()
         {
             CreateMap<Customer, DataAccess.Entities.Customer>().ReverseMap();
+            CreateMap<Adress, DataAccess.Entities.Adress>().ReverseMap();
         }
     }
 }
