@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lpI2c1/Kz420PFE+lzNzJ4pRaN5c9HRRz6Zb2utGDr/5marWox3mFUQpV4HNenrdI8LgPOQR69TbpI/DmhDywA==",
+  "dgSpecHash": "Fyz9LtxkqyYGP25sDH/FPhpL3UikKYLhM8Y6CG1bWKgsPb+B52hCM8meue/OJEMVs63D8odeNtnzrV47aArF0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\PC\\Desktop\\Visual Studio\\Projetos\\StepByStep\\StepByStep.Domain\\StepByStep.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\PC\\.nuget\\packages\\fluentvalidation\\11.0.0\\fluentvalidation.11.0.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\PC\\.nuget\\packages\\fluentvalidation\\11.0.0\\fluentvalidation.11.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -9,7 +9,6 @@ namespace StepByStep.Tests.Domain.Customer
 {
     public class CustomerDomainTest
     {
-
         [Theory]
         [InlineData("")]
         [InlineData(null)]
@@ -17,7 +16,8 @@ namespace StepByStep.Tests.Domain.Customer
         {
             var customer = CustomerBuilder.New().WithName(name).Build();
 
-            customer.IsValid.Should().BeFalse();
+            customer.ValidationResult.Errors.Should().NotBeEmpty();
+            //customer.Validations.Errors.Select(s => s.ErrorMessage).Should().Contain("Nome completo não pode ser em branco");
         }
 
         [Fact]
@@ -25,7 +25,7 @@ namespace StepByStep.Tests.Domain.Customer
         {
             var customer = CustomerBuilder.New().WithBirthday(DateTime.MinValue).Build();
 
-            customer.IsValid.Should().BeFalse();
+            customer.ValidationResult.Errors.Should().NotBeEmpty();
         }
 
         [Fact]
@@ -33,7 +33,7 @@ namespace StepByStep.Tests.Domain.Customer
         {
             var customer = CustomerBuilder.New().WithBirthday(DateTime.MaxValue).Build();
 
-            customer.IsValid.Should().BeFalse();
+            customer.ValidationResult.Errors.Should().NotBeEmpty();
         }
 
         [Theory]
@@ -45,7 +45,7 @@ namespace StepByStep.Tests.Domain.Customer
         {
             var customer = CustomerBuilder.New().WithRg(rg).Build();
 
-            customer.IsValid.Should().BeFalse();
+            customer.ValidationResult.Errors.Should().NotBeEmpty();
         }
 
 
@@ -58,7 +58,7 @@ namespace StepByStep.Tests.Domain.Customer
         {
             var customer = CustomerBuilder.New().WithCpf(cpf).Build();
 
-            customer.IsValid.Should().BeFalse();
+            customer.ValidationResult.Errors.Should().NotBeEmpty();
         }
 
 
@@ -67,7 +67,7 @@ namespace StepByStep.Tests.Domain.Customer
         {
             var customer = CustomerBuilder.New().WithBirthday(DateTime.MinValue).Build();
 
-            customer.IsValid.Should().BeFalse();
+            customer.ValidationResult.Errors.Should().NotBeEmpty();
         }
 
         [Fact]
@@ -75,8 +75,7 @@ namespace StepByStep.Tests.Domain.Customer
         {
             var customer = CustomerBuilder.New().WithBirthday(DateTime.MaxValue).Build();
 
-            customer.IsValid.Should().BeFalse();
+            customer.ValidationResult.Errors.Should().NotBeEmpty();
         }
-
     }
 }

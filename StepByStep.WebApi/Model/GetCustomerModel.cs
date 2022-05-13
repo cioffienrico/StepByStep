@@ -5,7 +5,7 @@ namespace StepByStep.Webapi.Models
 {
     public class GetCustomerModel
     {
-
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public DateTime Birthday { get; set; }
         public string Rg { get; set; }
@@ -18,9 +18,13 @@ namespace StepByStep.Webapi.Models
         public string City { get; set; }
         public string State { get; set; }
 
-
-        public GetCustomerModel(string name, DateTime birthday, string rg, string cpf, string cep, string road, string number, string complement, string neighborhood, string city, string state)
+        public GetCustomerModel()
         {
+                
+        }
+        public GetCustomerModel(Guid id, string name, DateTime birthday, string rg, string cpf, string cep, string road, string number, string complement, string neighborhood, string city, string state)
+        {
+            Id = id;
             Name = name;
             Birthday = birthday;
             Rg = rg;

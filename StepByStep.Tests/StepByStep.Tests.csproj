@@ -6,21 +6,24 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
-  <ItemGroup>
-	<PackageReference Include="Autofac" Version="6.3.0" />
-	<PackageReference Include="FluentAssertions" Version="6.6.0" />
-	<PackageReference Include="xunit.frameworks.autofac" Version="0.1.0" />
-	<PackageReference Include="FluentValidation" Version="11.0.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
-    <PackageReference Include="xunit" Version="2.4.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
-    <PackageReference Include="coverlet.collector" Version="1.2.0" />
-  </ItemGroup>
+	 <ItemGroup>
+		 <PackageReference Include="FluentAssertions" Version="6.5.1" />
+		 <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+		 <PackageReference Include="xunit" Version="2.4.1" />
+		 <PackageReference Include="xunit.frameworks.autofac" Version="0.5.4" />
+		 <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+			 <PrivateAssets>all</PrivateAssets>
+			 <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		 </PackageReference>
+		 <PackageReference Include="coverlet.collector" Version="3.1.2">
+			 <PrivateAssets>all</PrivateAssets>
+			 <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		 </PackageReference>
+	 </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\StepByStep.Domain\StepByStep.Domain.csproj" />
     <ProjectReference Include="..\StepByStep.Infrastructure\StepByStep.Infrastructure.csproj" />
-    <ProjectReference Include="..\StepByStep.WebApi\StepByStep.WebApi.csproj" />
   </ItemGroup>
 
 </Project>

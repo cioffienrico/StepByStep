@@ -1,8 +1,8 @@
 version: '3.7'
 
 services:
-  stepbystep.webapi:
-    container_name: StepByStep.WebApi_1
+  project-webapi:
+    container_name: StepByStep.WebApi
     build:
       labels:
         com.microsoft.created-by: "visual-studio"

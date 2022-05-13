@@ -1,4 +1,4 @@
-﻿using StepByStep.Domain.Customer;
+﻿using StepByStep.Domain;
 using System.Collections.Generic;
 using System.Text;
 

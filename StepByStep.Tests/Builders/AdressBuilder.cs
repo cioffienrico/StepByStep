@@ -78,7 +78,7 @@ namespace StepByStep.Test.Builders
             return this;
         }
 
-        public Adress Build() => new Adress(Id, Cep, Road, Number, Complement, Neighborhood, City, State);
+        public Address Build() => new Address(Id, Cep, Road, Number, Complement, Neighborhood, City, State);
 
     }
 }

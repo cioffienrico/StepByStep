@@ -17,8 +17,8 @@ namespace StepByStep.Test.Domain
         {
             var adress = AdressBuilder.New().WithCep(cep).Build();
 
-            adress.Validations.Errors.Should().NotBeEmpty();
-            adress.Validations.Errors.Should().NotBeNull();
+            adress.ValidationResult.Errors.Should().NotBeEmpty();
+            adress.ValidationResult.Errors.Should().NotBeNull();
         }
 
         [Theory]
@@ -28,8 +28,8 @@ namespace StepByStep.Test.Domain
         {
             var adress = AdressBuilder.New().WithRoad(road).Build();
 
-            adress.Validations.Errors.Should().NotBeEmpty();
-            adress.Validations.Errors.Should().NotBeNull();
+            adress.ValidationResult.Errors.Should().NotBeEmpty();
+            adress.ValidationResult.Errors.Should().NotBeNull();
         }
 
         [Theory]
@@ -39,8 +39,8 @@ namespace StepByStep.Test.Domain
         {
             var adress = AdressBuilder.New().WithNumber(number).Build();
 
-            adress.Validations.Errors.Should().NotBeEmpty();
-            adress.Validations.Errors.Should().NotBeNull();
+            adress.ValidationResult.Errors.Should().NotBeEmpty();
+            adress.ValidationResult.Errors.Should().NotBeNull();
         }
 
         [Theory]
@@ -50,8 +50,8 @@ namespace StepByStep.Test.Domain
         {
             var adress = AdressBuilder.New().WithNeighborhood(neighborhood).Build();
 
-            adress.Validations.Errors.Should().NotBeEmpty();
-            adress.Validations.Errors.Should().NotBeNull();
+            adress.ValidationResult.Errors.Should().NotBeEmpty();
+            adress.ValidationResult.Errors.Should().NotBeNull();
         }
         
         [Theory]
@@ -61,8 +61,8 @@ namespace StepByStep.Test.Domain
         {
             var adress = AdressBuilder.New().WithCity(city).Build();
 
-            adress.Validations.Errors.Should().NotBeEmpty();
-            adress.Validations.Errors.Should().NotBeNull();
+            adress.ValidationResult.Errors.Should().NotBeEmpty();
+            adress.ValidationResult.Errors.Should().NotBeNull();
         }
         [Theory]
         [InlineData("")]
@@ -71,8 +71,8 @@ namespace StepByStep.Test.Domain
         {
             var adress = AdressBuilder.New().WithState(state).Build();
 
-            adress.Validations.Errors.Should().NotBeEmpty();
-            adress.Validations.Errors.Should().NotBeNull();
+            adress.ValidationResult.Errors.Should().NotBeEmpty();
+            adress.ValidationResult.Errors.Should().NotBeNull();
         }
        
 

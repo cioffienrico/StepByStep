@@ -8,12 +8,8 @@ namespace StepByStep.Infrastructure.DataAccess.Map
     {
         public void Configure(EntityTypeBuilder<Customer> builder)
         {
-            builder.ToTable("Customer", "StepByStep");
-            builder.HasKey(s => s.Id);
-            builder.Property(d => d.Name).IsRequired().HasMaxLength(200);
-            builder.Property(d => d.Birthday).IsRequired();
-            builder.Property(d => d.Rg).HasMaxLength(100);
-            builder.Property(d => d.Cpf).HasMaxLength(100);
+            builder.ToTable("Customer", "public");
+            builder.HasKey(k => k.Id);
         }
     }
 }

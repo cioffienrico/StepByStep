@@ -3,7 +3,7 @@ using System;
 
 namespace StepByStep.Domain.Validator
 {
-    public class CustomerValidator : AbstractValidator <Customer.Customer>
+    public class CustomerValidator : AbstractValidator <Customer>
     {
         public CustomerValidator()
         {
@@ -13,8 +13,7 @@ namespace StepByStep.Domain.Validator
 
             RuleFor(r => r.Name)
                 .NotNull()
-                .NotEmpty()
-                .MaximumLength(200);
+                .NotEmpty();                
 
             RuleFor(r => r.Birthday)
                 .NotNull()
@@ -34,14 +33,16 @@ namespace StepByStep.Domain.Validator
             RuleFor(r => r.RegisterDate)
                 .NotNull()
                 .NotEmpty()
-                .GreaterThanOrEqualTo(DateTime.MinValue).LessThanOrEqualTo(DateTime.MaxValue);           
+                .GreaterThanOrEqualTo(DateTime.MinValue).LessThanOrEqualTo(DateTime.MaxValue);
+
+            RuleFor(r => r.Address)
+                .NotNull();
 
             RuleFor(r => r.Active)
                 .NotNull()
                 .NotEmpty();
 
-            RuleFor(r => r.Adress)
-                .NotNull();
+            
                 
 
         }

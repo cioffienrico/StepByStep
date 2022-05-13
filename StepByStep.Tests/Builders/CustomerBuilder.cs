@@ -1,5 +1,4 @@
 ﻿using StepByStep.Domain;
-using StepByStep.Domain.Customer;
 using StepByStep.Test.Builders;
 using System;
 
@@ -15,7 +14,7 @@ namespace StepByStep.Tests.Builders
         public string Cpf;
         public DateTime RegisterDate;
         public bool Active;
-        public Adress Adress;
+        public Address Adress;
 
         public static CustomerBuilder New()
         {
@@ -57,6 +56,8 @@ namespace StepByStep.Tests.Builders
             return this;
         }
 
+       
+
         public CustomerBuilder WithCpf(string cpf)
         {
             Cpf = cpf;
@@ -74,11 +75,15 @@ namespace StepByStep.Tests.Builders
             Active = active;
             return this;
         }
-
+        public CustomerBuilder WithAdress(Address adress)
+        {
+            Adress = adress;
+            return this;
+        }
 
         public Customer Build() =>
         
-            new Customer(Id, Name, Birthday, Rg, Cpf, RegisterDate, Active, Adress);
+            new Customer(Id, Name, Birthday, Rg, Cpf, RegisterDate, Adress, Active);
         
 
     }

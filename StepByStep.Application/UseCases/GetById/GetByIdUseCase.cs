@@ -1,6 +1,6 @@
 ﻿using StepByStep.Application.Repositories;
 using StepByStep.Application.UseCases.GetById;
-using StepByStep.Domain.Customer;
+using StepByStep.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;

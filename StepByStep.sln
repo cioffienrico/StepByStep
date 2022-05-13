@@ -18,11 +18,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StepByStep.Tests", "StepByS
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{CFE4A23B-5F9E-4A07-BF53-E8CA7034FB70}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{4B5ED49F-8DC3-446A-8076-63792E21DFC6}"
-	ProjectSection(SolutionItems) = preProject
-		nuget.config = nuget.config
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

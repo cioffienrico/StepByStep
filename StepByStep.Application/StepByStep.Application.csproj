@@ -5,16 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="11.0.0" />
-	<PackageReference Include="AutoMapper" Version="11.0.1" />
+	<Compile Remove="UseCases\GetAll\GetAllRequest.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\StepByStep.Domain\StepByStep.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Boundaries\" />
   </ItemGroup>
 
 </Project>

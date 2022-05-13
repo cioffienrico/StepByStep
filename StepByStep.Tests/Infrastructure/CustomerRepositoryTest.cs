@@ -1,5 +1,6 @@
 ﻿using FluentAssertions;
 using StepByStep.Application.Repositories;
+using StepByStep.Test.Builders;
 using StepByStep.Tests.Builders;
 using Xunit;
 using Xunit.Frameworks.Autofac;
@@ -16,11 +17,12 @@ namespace StepByStep.Test.Infrastructure
             this.customerRepository = customerRepository;
         }
 
+
         [Fact]
-        public void ShouldAddNewClient()
+        public void DeveAdicionarUmClienteNovoNoBanco()
         {
-            var customer = CustomerBuilder.New().Build();
-            
+            var customer = CustomerBuilder.New().WithRg("223431485").WithCpf("84023371041").Build();
+
             var retorno = customerRepository.AddClient(customer);
             var client = customerRepository.SearchByName(customer.Name);
 
@@ -29,13 +31,14 @@ namespace StepByStep.Test.Infrastructure
         }
 
         [Fact]
-        public void ShouldUpdateNewClient()
+        public void DeveAtualizarUmClienteNovoNoBanco()
         {
-            var customer = CustomerBuilder.New().Build();
+            var customer = CustomerBuilder.New().WithRg("163785892").WithCpf("55829931001").Build();
+            var adress = AdressBuilder.New().WithId(customer.Address.Id).Build();
 
             customerRepository.AddClient(customer);
-            
-            customer = CustomerBuilder.New().WithId(customer.Id).WithName("Teste atualizar").Build();
+
+            customer = CustomerBuilder.New().WithId(customer.Id).WithName("Teste atualizar").WithAdress(adress).Build();
 
             var retorno1 = customerRepository.UpdateClient(customer);
             var a = customerRepository.SearchByName("Teste atualizar");

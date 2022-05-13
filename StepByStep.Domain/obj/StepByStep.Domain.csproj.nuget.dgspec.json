@@ -44,10 +44,6 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.0.0, )"
-            },
-            "System.ComponentModel.Annotations": {
-              "target": "Package",
-              "version": "[5.0.0, )"
             }
           },
           "imports": [

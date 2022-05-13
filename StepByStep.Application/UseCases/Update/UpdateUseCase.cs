@@ -1,6 +1,6 @@
 ﻿using StepByStep.Application.Repositories;
 using StepByStep.Application.UseCases.Update;
-using StepByStep.Domain.Customer;
+using StepByStep.Domain;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -23,7 +23,7 @@ namespace StepByStep.Application.UseCases.Update
             if (customer == null)
                 return false;
 
-            var customerUpdate = new Customer(customer.Id, request.FullName, request.Birthday, request.Rg, request.Cpf, customer.RegisterDate, customer.Active, customer.Adress);
+            var customerUpdate = new Customer(customer.Id, request.FullName, request.Birthday, request.Rg, request.Cpf, customer.RegisterDate, customer.Address, customer.Active);
 
             var updated = customerRepository.UpdateClient(customerUpdate);
 

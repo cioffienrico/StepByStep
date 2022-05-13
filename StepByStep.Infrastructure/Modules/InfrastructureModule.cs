@@ -1,13 +1,11 @@
 ﻿using Autofac;
 using AutoMapper;
-using AutoMapper.Extensions.ExpressionMapping;
 using Microsoft.EntityFrameworkCore;
 using StepByStep.Application.Repositories;
 using StepByStep.Infrastructure.DataAccess.Repositorios;
 using StepByStep.Infrastructure.Mapper;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace StepByStep.Infrastructure.Modules
 {
@@ -15,43 +13,43 @@ namespace StepByStep.Infrastructure.Modules
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterAssemblyTypes(typeof(InfrastructureException).Assembly)
-                .AsImplementedInterfaces()
-                .AsSelf().InstancePerLifetimeScope();
+            builder.RegisterType<CustomerRepository>().As<ICustomerRepository>().AsImplementedInterfaces().AsSelf();
 
             Mapper(builder);
-            DataAccess(builder);
-
-        }
-
-        private void DataAccess(ContainerBuilder builder)
-        {
-            var connection = Environment.GetEnvironmentVariable("STEPBYSTEP_CONN");
-
-            builder.RegisterAssemblyTypes(typeof(InfrastructureException).Assembly)
-                .Where(t => (t.Namespace ?? string.Empty).Contains("Database"))
-                .AsImplementedInterfaces()
-                .InstancePerLifetimeScope();
+            Database(builder);
         }
 
         private void Mapper(ContainerBuilder builder)
         {
-            builder.RegisterAssemblyTypes(typeof(InfrastructureException).Assembly)
-               .Where(t => (t.Namespace ?? string.Empty).Contains("Database") && typeof(Profile).IsAssignableFrom(t) && !t.IsAbstract && t.IsPublic)
-               .As<Profile>();
+            builder.RegisterType<MapperProfile>().As<Profile>();
 
             builder.Register(c => new MapperConfiguration(cfg =>
             {
                 foreach (var profile in c.Resolve<IEnumerable<Profile>>())
                     cfg.AddProfile(profile);
 
-              //cfg.AddExpressionMapping();
             })).AsSelf().SingleInstance();
 
             builder.Register(c => c.Resolve<MapperConfiguration>()
                 .CreateMapper(c.Resolve))
                 .As<IMapper>()
                 .InstancePerLifetimeScope();
+        }
+
+        private void Database(ContainerBuilder builder)
+        {
+            var conn = Environment.GetEnvironmentVariable("CONN");
+
+            builder.RegisterAssemblyTypes(typeof(Context).Assembly)
+                .Where(t => (t.Namespace ?? string.Empty).Contains("DataAccess"))
+                .AsImplementedInterfaces()
+                .InstancePerLifetimeScope();
+
+            if (!string.IsNullOrEmpty(conn))
+            {
+                using Context context = new Context();
+                context.Database.Migrate();
+            }
         }
     }
     

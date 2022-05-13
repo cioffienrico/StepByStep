@@ -6,6 +6,7 @@ using StepByStep.Application.UseCases.Update;
 using StepByStep.Webapi.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace StepByStep.Webapi.Controllers
 {
@@ -40,9 +41,14 @@ namespace StepByStep.Webapi.Controllers
                 input.Complement,
                 input.Neighborhood,
                 input.City,
-                input.State);
+                input.State);          
 
             addUseCase.Execute(request);
+           
+             if (request.Customer.IsValid)
+            {
+                return BadRequest(request.Erros);
+            }
 
             return Ok(request.Customer.Id);
         }
@@ -54,12 +60,9 @@ namespace StepByStep.Webapi.Controllers
         public IActionResult GetAllCustomer()
         {
             var customers = getAllUseCase.Execute();
-            var customerModel = new List<GetCustomerModel>();
-
-            for (int i = 0; i < customers.Count; i++)
-            {
-                customerModel.Add(new GetCustomerModel(customerModel[i].Name, customerModel[i].Birthday, customerModel[i].Rg, customerModel[i].Cpf, customerModel[i].Cep, customerModel[i].Road, customerModel[i].Number, customerModel[i].Complement, customerModel[i].Neighborhood, customerModel[i].City, customerModel[i].State));
-            }
+            
+            var customerModel = customers.Select(s => new GetCustomerModel(s.Id, s.Name, s.Birthday, s.Rg, s.Cpf, s.Address.Cep, s.Address.Road, s.Address.Number, 
+                s.Address.Complement, s.Address.Neighborhood, s.Address.City, s.Address.State)).ToList();
             return Ok(customerModel);
         }
 
@@ -70,7 +73,7 @@ namespace StepByStep.Webapi.Controllers
         {                     
             var customer = getByIdUseCase.Execute(new GetByIdRequest(input.CustomerId));
 
-            var customerModel = new GetCustomerModel(customer.Name, customer.Birthday, customer.Rg, customer.Cpf, customer.Adress.Cep, customer.Adress.Road, customer.Adress.Number, customer.Adress.Complement, customer.Adress.Neighborhood, customer.Adress.City, customer.Adress.State);
+            var customerModel = new GetCustomerModel(customer.Id, customer.Name, customer.Birthday, customer.Rg, customer.Cpf, customer.Address.Cep, customer.Address.Road, customer.Address.Number, customer.Address.Complement, customer.Address.Neighborhood, customer.Address.City, customer.Address.State);
 
             return Ok(customerModel);
         }
@@ -82,7 +85,7 @@ namespace StepByStep.Webapi.Controllers
         {
             var customer = getByIdUseCase.Execute(new GetByIdRequest(input.CustomerId));
 
-            var customerModel = updateUseCase.Execute(new UpdateRequest(customer.Id, customer.Name, customer.Birthday, customer.Rg, customer.Cpf, customer.Adress.Cep, customer.Adress.Road, customer.Adress.Number, customer.Adress.Complement, customer.Adress.Neighborhood, customer.Adress.City, customer.Adress.State));
+            var customerModel = updateUseCase.Execute(new UpdateRequest(customer.Id, customer.Name, customer.Birthday, customer.Rg, customer.Cpf, customer.Address.Cep, customer.Address.Road, customer.Address.Number, customer.Address.Complement, customer.Address.Neighborhood, customer.Address.City, customer.Address.State));
 
             return Ok(customerModel);
         }

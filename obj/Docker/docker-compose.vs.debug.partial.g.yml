@@ -1,9 +1,9 @@
 version: '3.7'
 
 services:
-  stepbystep.webapi:
+  project-webapi:
     image: stepbystepwebapi:dev
-    container_name: StepByStep.WebApi_1
+    container_name: StepByStep.WebApi
     build:
       target: base
       labels:

@@ -1,5 +1,4 @@
 ﻿using StepByStep.Domain;
-using StepByStep.Domain.Customer;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,7 +19,7 @@ namespace StepByStep.Application.UseCases.Update
         public string Neighborhood { get; private set; }
         public string City { get; private set; }
         public string State { get; private set; }
-        public Adress Adress { get; set; }
+        public Address Adress { get; set; }
         public Customer Customer { get; set; }
 
         public UpdateRequest(Guid id, string fullName, DateTime birthday, string rg, string cpf, string cep, string road, string number, string complement, string neighborhood, string city, string state)

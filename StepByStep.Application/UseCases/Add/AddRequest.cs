@@ -1,5 +1,4 @@
 ﻿using StepByStep.Domain;
-using StepByStep.Domain.Customer;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -19,8 +18,9 @@ namespace StepByStep.Application.UseCases.Add
         public string Neighborhood { get; private set; }
         public string City { get; private set; }
         public string State { get; private set; }
-        public Adress Adress { get; set; }
+        public Address Adress { get; set; }
         public Customer Customer { get; set; }
+        public List<string> Erros { get; set; }
 
         public AddRequest(string name, DateTime birthday, string rg, string cpf, string cep, string road, string number, string complement, string neighborhood, string city, string state)
         {
@@ -35,6 +35,7 @@ namespace StepByStep.Application.UseCases.Add
             Neighborhood = neighborhood;
             City = city;
             State = state;
+            Erros = new List<string>();
 
 
 

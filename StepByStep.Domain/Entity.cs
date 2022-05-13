@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StepByStep.Domain
 {
-    public class Entity : IEntity
+    public abstract class Entity : IEntity
     {
         public Guid Id { get; set; }
 

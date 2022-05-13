@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using StepByStep.Domain;
+using StepByStep.Infrastructure.DataAccess.Entities;
 
 namespace StepByStep.Infrastructure.DataAccess.Map
 {
@@ -8,7 +8,7 @@ namespace StepByStep.Infrastructure.DataAccess.Map
     {
         public void Configure(EntityTypeBuilder<Adress> builder)
         {
-            builder.ToTable("Adress", "StepByStep");
+            builder.ToTable("Adress", "public");
             builder.HasKey(k => k.Id);
         }
     }

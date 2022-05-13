@@ -1,4 +1,4 @@
-﻿using StepByStep.Domain.Customer;
+﻿using StepByStep.Domain;
 using System;
 using System.Linq;
 
@@ -8,7 +8,13 @@ namespace StepByStep.Application.UseCases.Add.RequestHandlers
     {
         public override void ProcessRequest(AddRequest request)
         {
-            request.Customer = new Customer(Guid.NewGuid(), request.Name, request.Birthday, request.Rg, request.Cpf, DateTime.Now, true, request.Adress);
+            request.Customer = new Customer(Guid.NewGuid(), request.Name, request.Birthday, request.Rg, request.Cpf, DateTime.Now, request.Adress, true);
+
+            if (!request.Customer.IsValid)
+            {
+                request.Erros.AddRange(request.Customer.ValidationResult.Errors.Select(s => s.ErrorMessage).ToArray());
+                return;
+            }
 
             sucessor?.ProcessRequest(request);
         }
