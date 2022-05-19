@@ -35,9 +35,6 @@ namespace StepByStep.Domain.Validator
                 .NotEmpty()
                 .GreaterThanOrEqualTo(DateTime.MinValue).LessThanOrEqualTo(DateTime.MaxValue);
 
-            RuleFor(r => r.Address)
-                .NotNull();
-
             RuleFor(r => r.Active)
                 .NotNull()
                 .NotEmpty();

@@ -18,7 +18,7 @@ namespace StepByStep.Application.UseCases.Add
         public string Neighborhood { get; private set; }
         public string City { get; private set; }
         public string State { get; private set; }
-        public Address Adress { get; set; }
+        public Address Address { get; set; }
         public Customer Customer { get; set; }
         public List<string> Erros { get; set; }
 

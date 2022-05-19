@@ -6,6 +6,7 @@ namespace StepByStep.Domain
 {
     public class Address : Entity
     {
+        public Guid CustomerId { get; set; }
         public string Cep { get; private set; }
         public string Road { get; private set; }
         public string Number { get; private set; }
@@ -13,10 +14,11 @@ namespace StepByStep.Domain
         public string Neighborhood { get; private set; }
         public string City { get; private set; }
         public string State { get; private set; }
-
-        public Address(Guid id, string cep, string road, string number, string complement, string neighborhood, string city, string state)
+        public virtual Customer Customer { get; private set; }
+    public Address(Guid id, Guid customerId, string cep, string road, string number, string complement, string neighborhood, string city, string state)
         {
             Id = id;
+            CustomerId = customerId;
             Cep = cep;
             Road = road;
             Number = number;

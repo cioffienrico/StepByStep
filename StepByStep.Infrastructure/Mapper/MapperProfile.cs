@@ -8,7 +8,7 @@ namespace StepByStep.Infrastructure.Mapper
         public MapperProfile()
         {
             CreateMap<Customer, DataAccess.Entities.Customer>().ReverseMap();
-            CreateMap<Address, DataAccess.Entities.Adress>().ReverseMap();
+            CreateMap<Address, DataAccess.Entities.Address>().ReverseMap();
         }
     }
 }

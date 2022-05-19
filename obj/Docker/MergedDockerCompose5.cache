@@ -1,0 +1,41 @@
+networks:
+  project-net: {}
+  stepbystep-network: {}
+services:
+  project-db.database:
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    image: postgres:9.5
+    networks:
+      stepbystep-network: {}
+    ports:
+    - published: 5432
+      target: 5432
+    restart: always
+    volumes:
+    - pgdata:/var/lib/postgresql/data:rw
+  project-webapi:
+    build:
+      context: C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep
+      dockerfile: StepByStep.WebApi/Dockerfile
+    image: stepbystepwebapi
+    networks:
+      project-net: {}
+  stepbystep.webapi:
+    build:
+      context: C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep
+      dockerfile: StepByStep.Webapi/Dockerfile
+    depends_on:
+      project-db.database:
+        condition: service_started
+    environment:
+      CONN: Host=project-db.database;Port=5432;Database=postgres;User Id=postgres;Password=postgres;
+    networks:
+      stepbystep-network: {}
+    ports:
+    - published: 8082
+      target: 80
+version: '3.7'
+volumes:
+  pgdata: {}

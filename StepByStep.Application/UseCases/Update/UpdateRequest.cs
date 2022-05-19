@@ -8,7 +8,7 @@ namespace StepByStep.Application.UseCases.Update
     public class UpdateRequest
     {
         public Guid Id { get; private set; }    
-        public string FullName { get; private set; }
+        public string Name { get; private set; }
         public DateTime Birthday { get; private set; }
         public string Rg { get; private set; }
         public string Cpf { get; private set; }
@@ -19,13 +19,13 @@ namespace StepByStep.Application.UseCases.Update
         public string Neighborhood { get; private set; }
         public string City { get; private set; }
         public string State { get; private set; }
-        public Address Adress { get; set; }
+        public Address Address { get; set; }
         public Customer Customer { get; set; }
 
-        public UpdateRequest(Guid id, string fullName, DateTime birthday, string rg, string cpf, string cep, string road, string number, string complement, string neighborhood, string city, string state)
+        public UpdateRequest(Guid id, string name, DateTime birthday, string rg, string cpf, string cep, string road, string number, string complement, string neighborhood, string city, string state)
         {
             Id = id;
-            FullName = fullName;
+            Name = name;
             Birthday = birthday;
             Rg = rg;
             Cpf = cpf;

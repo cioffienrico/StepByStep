@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace StepByStep.Webapi.Models
+namespace StepByStep.Webapi.Model
 {
     public class GetCustomerIdInput
     {

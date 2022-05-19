@@ -18,7 +18,7 @@ namespace StepByStep.Application.UseCases.GetById
         }
         public Customer Execute(GetByIdRequest request)
         {
-            var customer = customerRepository.SearchById(request.Id);
+            var customer = customerRepository.GetById(request.Id);
 
             return customer;
         }

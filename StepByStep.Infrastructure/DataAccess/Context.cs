@@ -10,8 +10,8 @@ namespace StepByStep.Infrastructure
 {
     public class Context : DbContext
     {
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Adress> Adresses { get; set; }
+        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Address> Address { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -32,7 +32,7 @@ namespace StepByStep.Infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CustomerMap());
-            modelBuilder.ApplyConfiguration(new AdressMap());
+            modelBuilder.ApplyConfiguration(new AddressMap());
 
             base.OnModelCreating(modelBuilder);
         }

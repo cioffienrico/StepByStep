@@ -1,9 +1,5 @@
 ﻿++Solution 'StepByStep' ‎(6 of 6 projects)
 i:{00000000-0000-0000-0000-000000000000}:StepByStep.sln
-++SolutionItems
-i:{00000000-0000-0000-0000-000000000000}:SolutionItems
-++nuget.config
-i:{4b5ed49f-8dc3-446a-8076-63792e21dfc6}:C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\nuget.config
 ++docker-compose
 i:{00000000-0000-0000-0000-000000000000}:docker-compose
 ++.dockerignore
@@ -15,59 +11,33 @@ i:{cfe4a23b-5f9e-4a07-bf53-e8ca7034fb70}:c:\users\pc\desktop\visual studio\proje
 i:{cfe4a23b-5f9e-4a07-bf53-e8ca7034fb70}:c:\users\pc\desktop\visual studio\projetos\stepbystep\docker-compose.override.yml
 ++StepByStep.WebApi
 i:{00000000-0000-0000-0000-000000000000}:StepByStep.WebApi
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\stepbystep.webapi.csproj
 ++Connected Services 
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6031
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6389
 ++Dependencies
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6030
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:>1171
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>1555
-i:{808b19e7-0530-49c7-9c9d-e138168c281a}:>1172
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>5600
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6388
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:>1239
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6100
+i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:>1240
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>1880
 ++Properties
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\properties\
-++launchSettings.json
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\properties\launchsettings.json
+++Controller
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\controller\
+++CustomerController.cs
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\controller\customercontroller.cs
 ++DependencyInjection
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\dependencyinjection\
 ++AutoFacExtensions.cs
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\dependencyinjection\autofacextensions.cs
-++FiltersExtensions.cs
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\dependencyinjection\filtersextensions.cs
-++Filters
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\filters\
-++NotificationFilter.cs
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\filters\notificationfilter.cs
-++Infrastructure
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\infrastructure\
-++Extensions
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\infrastructure\extensions\
-++GetJwtTokenExtension.cs
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\infrastructure\extensions\getjwttokenextension.cs
 ++Model
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\model\
-++UserInfo.cs
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\model\userinfo.cs
-++Module
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\module\
-++WebApiModule.cs
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\module\webapimodule.cs
-++Notification
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\notification\
-i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\repositories\notification\
-++NotificationContext.cs
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\notification\notificationcontext.cs
-++Pipeline
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\pipeline\
-++ErrorHandlerMiddleware.cs
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\pipeline\errorhandlermiddleware.cs
-++UseCases
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\usecases\
-i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\
+++AddCustomerModel.cs
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\model\addcustomermodel.cs
+++GetCustomerId.cs
+++GetCustomerModel.cs
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\model\getcustomermodel.cs
 ++appsettings.json
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\appsettings.json
-++appsettings.Development.json
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\appsettings.development.json
 ++Dockerfile
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\dockerfile
 ++Program.cs
@@ -75,182 +45,162 @@ i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\proje
 ++Startup.cs
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\startup.cs
 ++No service dependencies discovered
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6032
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6390
 ++Analyzers
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:analyzers
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:analyzers
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:analyzers
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:analyzers
 ++Frameworks
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:frameworks
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:frameworks
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:frameworks
 i:{808b19e7-0530-49c7-9c9d-e138168c281a}:frameworks
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:frameworks
+i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:frameworks
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:frameworks
 ++Packages
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:packages
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:packages
 i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:packages
 i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:packages
-i:{808b19e7-0530-49c7-9c9d-e138168c281a}:packages
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:packages
 ++Projects
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:projects
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:projects
 i:{808b19e7-0530-49c7-9c9d-e138168c281a}:projects
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:projects
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:projects
+++launchSettings.json
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\properties\launchsettings.json
+++appsettings.Development.json
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\appsettings.development.json
 ++Microsoft.AspNetCore.Analyzers
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
 ++Microsoft.AspNetCore.Components.Analyzers
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
 ++Microsoft.AspNetCore.Mvc.Analyzers
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
-++Microsoft.CodeAnalysis.Analyzers
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
-++Microsoft.CodeAnalysis.CSharp.Analyzers
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
 ++Microsoft.EntityFrameworkCore.Analyzers
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.2\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.2\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.2\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.2\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 ++Microsoft.AspNetCore.App
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\microsoft.aspnetcore.app
 ++Microsoft.NETCore.App
 i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\microsoft.netcore.app
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\microsoft.netcore.app
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\microsoft.netcore.app
 i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\microsoft.netcore.app
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\microsoft.netcore.app
-++Autofac.Configuration (4.1.0)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6041
-++Autofac.Extensions.DependencyInjection (5.0.1)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6042
-++AutoMapper (9.0.0)
-++FluentValidation (11.0.0)
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:>6098
-i:{808b19e7-0530-49c7-9c9d-e138168c281a}:>6068
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6077
-++Gcsb.Connect.Pkg.Serilog (1.0.6)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6051
-++Gcsb.Connect.Pkg.Startup (1.4.0)
-++Gscb.Connect.Pkg.Authentication (1.0.3)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6048
-++Microsoft.AspNetCore.Authentication.JwtBearer (3.1.24)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6050
-++Microsoft.AspNetCore.Mvc.NewtonsoftJson (3.1.2)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6047
-++Microsoft.Extensions.Logging.Debug (3.1.2)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6054
-++Microsoft.VisualStudio.Azure.Containers.Tools.Targets (1.9.10)
-++Microsoft.VisualStudio.Web.CodeGeneration.Design (3.1.2)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6053
-++Newtonsoft.Json (12.0.3)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6044
-++Serilog.AspNetCore (3.3.0-dev-00152)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6045
+i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\microsoft.netcore.app
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\microsoft.netcore.app
+++Autofac.Configuration (6.0.0)
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6438
+++Autofac.Extensions.DependencyInjection (7.2.0)
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6439
+++Microsoft.VisualStudio.Azure.Containers.Tools.Targets (1.14.0)
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6442
+++Swashbuckle.AspNetCore (6.2.3)
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6440
+++Swashbuckle.AspNetCore.Newtonsoft (6.2.3)
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6441
 ++StepByStep.Application
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\stepbystep.application.csproj
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\stepbystep.application.csproj
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\bin\debug\netcoreapp3.1\stepbystep.application.dll
 i:{00000000-0000-0000-0000-000000000000}:StepByStep.Application
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\bin\debug\netcoreapp3.1\stepbystep.application.dll
 ++StepByStep.Domain
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\stepbystep.domain.csproj
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\bin\debug\netcoreapp3.1\stepbystep.domain.dll
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\bin\debug\netcoreapp3.1\stepbystep.domain.dll
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\bin\debug\netcoreapp3.1\stepbystep.domain.dll
 i:{00000000-0000-0000-0000-000000000000}:StepByStep.Domain
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\stepbystep.domain.csproj
-i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\stepbystep.domain.csproj
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\stepbystep.domain.csproj
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\bin\debug\netcoreapp3.1\stepbystep.domain.dll
 ++StepByStep.Infrastructure
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\stepbystep.infrastructure.csproj
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\stepbystep.infrastructure.dll
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\stepbystep.infrastructure.dll
 i:{00000000-0000-0000-0000-000000000000}:StepByStep.Infrastructure
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\stepbystep.infrastructure.csproj
-++Common
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\common\
-++Customer
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\customer\
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\domain\customer\
-++Validator
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\validator\
-++CustomerValidator.cs
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\validator\customervalidator.cs
-++DomainException.cs
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\domainexception.cs
-++Entity.cs
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\entity.cs
-++IEntity.cs
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\ientity.cs
-++Notifications.cs
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\common\notifications.cs
-++Customer.cs
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\customer\customer.cs
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\entities\customer.cs
-++DataAccess
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\
-++Database
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\database\
-++Mapper
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\mapper\
-++Migrations
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\migrations\
-++Modules
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\modules\
 ++Repositories
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\repositories\
 i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\repositories\
-++Context.cs
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\context.cs
-++InfrastructureException.cs
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\infrastructureexception.cs
-++Entities
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\entities\
-++Map
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\map\
-++AutoMapperProfile
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\database\automapperprofile\
-++MapperProfile.cs
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\mapper\mapperprofile.cs
-++ApplicationModule.cs
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\modules\applicationmodule.cs
-++InfrastructureModule.cs
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\modules\infrastructuremodule.cs
-++CustomerRepository.cs
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\repositories\customerrepository.cs
-++Autofac (6.3.0)
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6085
-++AutoMapper.Extensions.ExpressionMapping (3.0.2)
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6086
-++Microsoft.EntityFrameworkCore (3.1.2)
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6069
-++Microsoft.EntityFrameworkCore.Design (3.1.2)
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6071
-++Microsoft.EntityFrameworkCore.InMemory (3.1.2)
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6082
-++Microsoft.EntityFrameworkCore.Tools (3.1.2)
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6084
-++Npgsql.EntityFrameworkCore.PostgreSQL (3.1.2)
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6080
-++CustomerMap.cs
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\map\customermap.cs
-++InfraDomainProfile.cs
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\database\automapperprofile\infradomainprofile.cs
-++Boundaries
-i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\boundaries\
-++ApplicationException.cs
-i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\applicationexception.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\repositories\
+++UseCases
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\application\usecases\
+++Add
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\add\
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\application\usecases\add\
+++RequestHandlers
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\add\requesthandlers\
+++MountAddressHandler.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\add\requesthandlers\mountaddresshandler.cs
+++MountCustomerHandler.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\add\requesthandlers\mountcustomerhandler.cs
+++SaveCustomerHandler.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\add\requesthandlers\savecustomerhandler.cs
+++AddRequest.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\add\addrequest.cs
+++AddUseCase.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\add\addusecase.cs
+++IAddUseCase.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\add\iaddusecase.cs
+++Delete
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\delete\
+++GetAll
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\getall\
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\application\usecases\getall\
+++GetById
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\getbyid\
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\application\usecases\getbyid\
+++GetByIdRequest.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\getbyid\getbyidrequest.cs
+++GetByIdUseCase.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\getbyid\getbyidusecase.cs
+++IGetByIdUseCase.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\getbyid\igetbyidusecase.cs
+++Update
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\update\
+++IUpdateUseCase.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\update\iupdateusecase.cs
+++UpdateRequest.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\update\updaterequest.cs
+++UpdateUseCase.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\update\updateusecase.cs
+++Handler.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\handler.cs
+++IAddressRepository.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\repositories\iaddressrepository.cs
 ++ICustomerRepository.cs
 i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\repositories\icustomerrepository.cs
-++INotifications.cs
-i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\repositories\notification\inotifications.cs
+++DeleteRequest.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\delete\deleterequest.cs
+++DeleteUseCase.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\delete\deleteusecase.cs
+++IDeleteUseCase.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\delete\ideleteusecase.cs
+++GetAllUseCase.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\getall\getallusecase.cs
+++IGetAllUseCase.cs
+i:{808b19e7-0530-49c7-9c9d-e138168c281a}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.application\usecases\getall\igetallusecase.cs
 ++StepByStep.Tests
 i:{00000000-0000-0000-0000-000000000000}:StepByStep.Tests
+++Application
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\application\
+++GetAllUseCaseTest.cs
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\application\usecases\getall\getallusecasetest.cs
+++GetByIdUseCaseTest.cs
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\application\usecases\getbyid\getbyidusecasetest.cs
 ++Builders
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\builders\
+++AddressBuilder.cs
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\builders\addressbuilder.cs
+++CustomerBuilder.cs
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\builders\customerbuilder.cs
 ++Domain
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\domain\
+++Infrastructure
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\infrastructure\
+++CustomerRepositoryTest.cs
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\infrastructure\customerrepositorytest.cs
 ++TestCaseOrdering
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\testcaseordering\
 ++ConfigureTestFramework.cs
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\configuretestframework.cs
-++CustomerBuilder.cs
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\builders\customerbuilder.cs
+++AddUseCaseTest.cs
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\application\usecases\add\addusecasetest.cs
+++Customer
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\domain\customer\
 ++DisplayNameOrderer.cs
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\testcaseordering\displaynameorderer.cs
 ++PriorityOrderer.cs
@@ -259,29 +209,394 @@ i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\proje
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\testcaseordering\testpriorityattribute.cs
 ++xunit.analyzers
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\.nuget\packages\xunit.analyzers\0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll
-++coverlet.collector (1.2.0)
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6083
-++FluentAssertions (6.6.0)
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6072
-++Microsoft.NET.Test.Sdk (16.5.0)
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6070
-++xunit (2.4.0)
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6076
-++xunit.frameworks.autofac (0.1.0)
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6079
-++xunit.runner.visualstudio (2.4.0)
-i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6081
+++coverlet.collector (3.1.2)
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6413
+++FluentAssertions (6.5.1)
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6403
+++Microsoft.NET.Test.Sdk (17.1.0)
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6400
+++xunit (2.4.1)
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6405
+++xunit.frameworks.autofac (0.5.4)
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6408
+++xunit.runner.visualstudio (2.4.3)
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:>6411
+++AddressDomainTest.cs
+i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\domain\customer\addressdomaintest.cs
 ++CustomerDomainTest.cs
 i:{6bef550b-9498-4231-ae59-27d0f88e820e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.tests\domain\customer\customerdomaintest.cs
-++Gcsb.Connect.Pkg.Startup (1.0.3)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6115
-++System.ComponentModel.Annotations (5.0.0)
-i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:>6126
+++Validator
+i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\validator\
+++Address.cs
+i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\address.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\entities\address.cs
+++Customer.cs
+i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\customer.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\entities\customer.cs
+++Entity.cs
+i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\entity.cs
+++IEntity.cs
+i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\ientity.cs
+++AddressValidator.cs
+i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\validator\addressvalidator.cs
+++CustomerValidator.cs
+i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.domain\validator\customervalidator.cs
+++FluentValidation (11.0.0)
+i:{6b7a9df8-49be-49b9-8730-501fc03a0b22}:>6402
+++Imports
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>1647
+++bin
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\
+++DataAccess
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\
+++Entities
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\entities\
+++Map
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\map\
+++AddressMap.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\map\addressmap.cs
+++CustomerMap.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\map\customermap.cs
+++Migrations
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\migrations\
+++20220517132529_InitialCreate.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\migrations\20220517132529_initialcreate.cs
+++20220517151742_AddIdCustomerForeignKey.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\migrations\20220517151742_addidcustomerforeignkey.cs
+++20220517151742_AddIdCustomerForeignKey.Designer.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\migrations\20220517151742_addidcustomerforeignkey.designer.cs
+++ContextModelSnapshot.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\migrations\contextmodelsnapshot.cs
+++AddressRepository.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\repositories\addressrepository.cs
+++CustomerRepository.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\repositories\customerrepository.cs
+++Context.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\context.cs
+++Mapper
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\mapper\
+++MapperProfile.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\mapper\mapperprofile.cs
+++Modules
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\modules\
+++ApplicationModule.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\modules\applicationmodule.cs
+++InfrastructureModule.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\modules\infrastructuremodule.cs
+++obj
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\
+++Sdk.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\sdk\sdk.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.illink.tasks\sdk\sdk.props
+++Sdk.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\sdk\sdk.targets
+++Debug
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\
+++20220517132529_InitialCreate.Designer.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\dataaccess\migrations\20220517132529_initialcreate.designer.cs
+++project.assets.json
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\project.assets.json
+++project.nuget.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\project.nuget.cache
+++StepByStep.Infrastructure.csproj.nuget.dgspec.json
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\stepbystep.infrastructure.csproj.nuget.dgspec.json
+++StepByStep.Infrastructure.csproj.nuget.g.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\stepbystep.infrastructure.csproj.nuget.g.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\stepbystep.infrastructure.csproj.nuget.g.props
+++StepByStep.Infrastructure.csproj.nuget.g.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\stepbystep.infrastructure.csproj.nuget.g.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\stepbystep.infrastructure.csproj.nuget.g.targets
+++Autofac (6.3.0)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6415
 ++AutoMapper (11.0.1)
-i:{808b19e7-0530-49c7-9c9d-e138168c281a}:>6127
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6136
-++Microsoft.VisualStudio.Azure.Containers.Tools.Targets (1.14.0)
-i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:>6128
-++AutoMapper (10.1.1)
-++Autofac (4.9.4)
-i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6137
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6407
+++Microsoft.EntityFrameworkCore (3.1.2)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6401
+++Microsoft.EntityFrameworkCore.Design (3.1.2)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6404
+++Microsoft.EntityFrameworkCore.InMemory (3.1.2)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6412
+++Microsoft.EntityFrameworkCore.Tools (3.1.2)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6414
+++Npgsql.EntityFrameworkCore.PostgreSQL (3.1.2)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:>6410
+++Microsoft.Common.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.props
+++Microsoft.NET.Sdk.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.props
+++Microsoft.NET.Sdk.BeforeCommon.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.beforecommon.targets
+++Microsoft.CSharp.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.targets
+++Microsoft.NET.Sdk.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.targets
+++Microsoft.NET.Compatibility.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\nuget.build.tasks.pack\build\nuget.build.tasks.pack.targets
+++net5.0
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net5.0\
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net5.0\
+++net6.0
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net6.0\
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\
+++netcoreapp3.1
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\
+++Microsoft.NuGet.ImportBefore.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\imports\microsoft.common.props\importbefore\microsoft.nuget.importbefore.props
+++NuGet.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.props
+++Microsoft.NET.Sdk.DefaultItems.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.supportedtargetframeworks.props
+++Microsoft.NET.SupportedPlatforms.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.supportedplatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.windowssdksupportedtargetplatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.props
+++Microsoft.NET.ILLink.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.illink.props
+++Microsoft.NET.Compatibility.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.props
+++Microsoft.NET.PackTool.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.props
+++Microsoft.NET.PackProjectTool.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.props
+++Microsoft.NET.Windows.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.windows.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.defaultassemblyinfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.defaultoutputpaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importpublishprofile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.targetframeworkinference.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.runtimeidentifierinference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.eoltargetframeworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.nugetofflinecache.targets
+++Microsoft.Managed.Before.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.currentversion.targets
+++Microsoft.Managed.After.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.after.targets
+++Microsoft.NET.Sdk.Common.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.common.targets
+++Microsoft.PackageDependencyResolution.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.packagedependencyresolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.frameworkreferenceresolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.disablestandardframeworkresolution.targets
+++Microsoft.NET.DesignerSupport.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.designersupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.generateassemblyinfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.generateglobalusings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.generatesupportedruntime.targets
+++Microsoft.NET.ComposeStore.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.composestore.targets
+++Microsoft.NET.CrossGen.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.crossgen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.obsoletereferences.targets
+++Microsoft.NET.Publish.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.publish.targets
+++Microsoft.NET.PackTool.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.targets
+++Microsoft.NET.PackProjectTool.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.preservecompilationcontext.targets
+++Microsoft.NET.ConflictResolution.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.conflictresolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.targets
+++Microsoft.NET.ILLink.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.illink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.analyzers.targets
+++Microsoft.NET.Windows.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.windows.targets
+++Microsoft.NET.Compatibility.Common.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.common.targets
+++ref
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net5.0\ref\
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net6.0\ref\
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net5.0\ref\
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\ref\
+++StepByStep.Application.dll
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net6.0\stepbystep.application.dll
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\stepbystep.application.dll
+++StepByStep.Application.pdb
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net6.0\stepbystep.application.pdb
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\stepbystep.application.pdb
+++StepByStep.Domain.dll
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net6.0\stepbystep.domain.dll
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\stepbystep.domain.dll
+++StepByStep.Domain.pdb
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net6.0\stepbystep.domain.pdb
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\stepbystep.domain.pdb
+++StepByStep.Infrastructure.deps.json
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net6.0\stepbystep.infrastructure.deps.json
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\stepbystep.infrastructure.deps.json
+++StepByStep.Infrastructure.dll
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net6.0\stepbystep.infrastructure.dll
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\stepbystep.infrastructure.dll
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\stepbystep.infrastructure.dll
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.dll
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net6.0\ref\stepbystep.infrastructure.dll
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\ref\stepbystep.infrastructure.dll
+++StepByStep.Infrastructure.pdb
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\net6.0\stepbystep.infrastructure.pdb
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\stepbystep.infrastructure.pdb
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\stepbystep.infrastructure.pdb
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.pdb
+++StepByStep.Infrastructure.runtimeconfig.dev.json
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\stepbystep.infrastructure.runtimeconfig.dev.json
+++StepByStep.Infrastructure.runtimeconfig.json
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\bin\debug\netcoreapp3.1\stepbystep.infrastructure.runtimeconfig.json
+++.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net5.0\.netcoreapp,version=v5.0.assemblyattributes.cs
+++StepByStep.Infrastructure.AssemblyInfo.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net5.0\stepbystep.infrastructure.assemblyinfo.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\stepbystep.infrastructure.assemblyinfo.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.assemblyinfo.cs
+++StepByStep.Infrastructure.AssemblyInfoInputs.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net5.0\stepbystep.infrastructure.assemblyinfoinputs.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\stepbystep.infrastructure.assemblyinfoinputs.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.assemblyinfoinputs.cache
+++StepByStep.Infrastructure.assets.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net5.0\stepbystep.infrastructure.assets.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\stepbystep.infrastructure.assets.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.assets.cache
+++StepByStep.Infrastructure.csproj.AssemblyReference.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net5.0\stepbystep.infrastructure.csproj.assemblyreference.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\stepbystep.infrastructure.csproj.assemblyreference.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.csproj.assemblyreference.cache
+++StepByStep.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net5.0\stepbystep.infrastructure.generatedmsbuildeditorconfig.editorconfig
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\stepbystep.infrastructure.generatedmsbuildeditorconfig.editorconfig
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.generatedmsbuildeditorconfig.editorconfig
+++.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\.netcoreapp,version=v6.0.assemblyattributes.cs
+++StepByStep.Infrastructure.csproj.CopyComplete
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\stepbystep.infrastructure.csproj.copycomplete
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.csproj.copycomplete
+++StepByStep.Infrastructure.csproj.CoreCompileInputs.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\stepbystep.infrastructure.csproj.corecompileinputs.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.csproj.corecompileinputs.cache
+++StepByStep.Infrastructure.csproj.FileListAbsolute.txt
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\net6.0\stepbystep.infrastructure.csproj.filelistabsolute.txt
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.csproj.filelistabsolute.txt
+++.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\.netcoreapp,version=v3.1.assemblyattributes.cs
+++StepByStep.Infrastructure.csproj.BuildWithSkipAnalyzers
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.csproj.buildwithskipanalyzers
+++StepByStep.Infrastructure.genruntimeconfig.cache
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.infrastructure\obj\debug\netcoreapp3.1\stepbystep.infrastructure.genruntimeconfig.cache
+++Microsoft.EntityFrameworkCore.Design.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\users\pc\.nuget\packages\microsoft.entityframeworkcore.design\3.1.2\build\netcoreapp2.0\microsoft.entityframeworkcore.design.props
+++Microsoft.NuGet.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\nuget\17.0\microsoft.nuget.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\microsoft.netcoresdk.bundledversions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.windowsforms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.wpf.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain)
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain\workloadmanifest.targets
+++Microsoft.CSharp.Core.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.csharp.core.targets
+++Microsoft.CSharp.DesignTime.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.csharp.designtime.targets
+++Microsoft.Common.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.targets
+++Microsoft.ServiceModel.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.servicemodel.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.servicemodel.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\microsoft.netcoresdk.bundledclitools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\targets\microsoft.net.defaultpackageconflictoverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.props
+++Microsoft.NET.ILLink.Tasks.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.illink.tasks\build\microsoft.net.illink.tasks.props
+++System.Windows.Forms.Analyzers.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.windowsdesktop\targets\system.windows.forms.analyzers.props
+++Microsoft.Managed.Core.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.targets
+++Microsoft.Managed.DesignTime.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.managed.designtime.targets
+++Microsoft.Common.CurrentVersion.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.currentversion.targets
+++Microsoft.Managed.Core.CurrentVersions.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.currentversions.targets
+++Microsoft.NET.props
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.net.props
+++Microsoft.CodeAnalysis.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\codeanalysis\microsoft.codeanalysis.targets
+++Microsoft.Xaml.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.xaml.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.workflowbuildextensions.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.workflowbuildextensions.targets
+++Microsoft.TeamTest.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\teamtest\microsoft.teamtest.targets
+++NuGet.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.targets
+++Microsoft.Docker.ImportAfter.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.docker.importafter.targets
+++Microsoft.NET.Build.Extensions.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.net.build.extensions.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\microsoft.net.build.extensions\microsoft.net.build.extensions.targets
+++Microsoft.NuGet.ImportAfter.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.nuget.importafter.targets
+++Microsoft.Web.ImportAfter.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.web.importafter.targets
+++Microsoft.Docker.targets
+i:{acc4164a-0b8d-414b-a186-73c0f29ea4d4}:c:\program files\microsoft visual studio\2022\community\msbuild\sdks\microsoft.docker.sdk\build\microsoft.docker.targets
+++GetCustomerIdInput.cs
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\model\getcustomeridinput.cs
+++GetCustomerIdInput - Copy.cs
+++CustomerUpdateInput.cs
+i:{3a2c0b99-3dd3-41f9-a74d-6c849fa0c71e}:c:\users\pc\desktop\visual studio\projetos\stepbystep\stepbystep.webapi\model\customerupdateinput.cs

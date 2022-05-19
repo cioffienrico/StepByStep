@@ -16,14 +16,11 @@ namespace StepByStep.Application.UseCases.Update
             this.customerRepository = customerRepository;
         }
 
-        public bool Execute(UpdateRequest request)
+        public Customer Execute(UpdateRequest request)
         {
-            var customer = customerRepository.SearchById(request.Id);
+            var customer = customerRepository.GetById(request.Id);
 
-            if (customer == null)
-                return false;
-
-            var customerUpdate = new Customer(customer.Id, request.FullName, request.Birthday, request.Rg, request.Cpf, customer.RegisterDate, customer.Address, customer.Active);
+            var customerUpdate = new Customer(customer.Id, request.Name, request.Birthday, request.Rg, request.Cpf, customer.RegisterDate, customer.Active);
 
             var updated = customerRepository.UpdateClient(customerUpdate);
 

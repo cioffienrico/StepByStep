@@ -2,13 +2,14 @@
 using StepByStep.Application.Repositories;
 using StepByStep.Application.UseCases.Add;
 using StepByStep.Tests.Builders;
+using StepByStep.Tests.TestCaseOrdering;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
 using Xunit.Frameworks.Autofac;
 
-namespace StepByStep.Test.Application.UseCases.Add
+namespace StepByStep.Tests.Application.UseCases.Add
 {
     [UseAutofacTestFramework]
     public class AddUseCaseTest
@@ -25,11 +26,11 @@ namespace StepByStep.Test.Application.UseCases.Add
         [Fact]
         public void DeveAdicionarUmCliente()
         {
-            var request = new AddRequest("Enrico", new DateTime(1999, 6, 09), "52.238.190-X", "473.123.378-05", "06026000", "Rua Victor Brecheret", "520", "T8 8D", "Vila Yara", "Osasco", "São Paulo");
+            var request = new AddRequest("Enrico", new DateTime(1999, 6, 09), "52.238.191-X", "473.123.378-06", "06026001", "Rua Victor Brecheret", "520", "T8 8D", "Vila Yara", "Osasco", "São Paulo");
 
             addUseCase.Execute(request);
 
-            var cliente = customerRepository.SearchClient(request.Rg, request.Cpf);
+            var cliente = customerRepository.GetByName(request.Name);
 
             request.Erros.Should().BeNullOrEmpty();
 
@@ -40,6 +41,7 @@ namespace StepByStep.Test.Application.UseCases.Add
             cliente.Cpf.Should().Be(request.Cpf);
         }
 
+
         [Fact]
         public void NaoDeveAdicionarUmClienteSemNome()
         {
@@ -47,7 +49,7 @@ namespace StepByStep.Test.Application.UseCases.Add
 
             addUseCase.Execute(request);
 
-            var cliente = customerRepository.SearchClient(request.Rg, request.Cpf);
+            var cliente = customerRepository.GetByName(request.Name);
 
             request.Erros.Should().NotBeNullOrEmpty().And.HaveCountGreaterThanOrEqualTo(1);
 
@@ -65,7 +67,7 @@ namespace StepByStep.Test.Application.UseCases.Add
 
             addUseCase.Execute(request);
 
-            var cliente = customerRepository.SearchClient(request.Rg, request.Cpf);
+            var cliente = customerRepository.GetClient(request.Rg, request.Cpf);
 
             request.Erros.Should().NotBeNullOrEmpty().And.Contain("Já existe um cliente com esse rg: " + request.Rg + ", ou com esse cpf: " + request.Cpf);
 

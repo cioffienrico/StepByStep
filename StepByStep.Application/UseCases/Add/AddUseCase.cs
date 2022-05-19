@@ -5,19 +5,19 @@ namespace StepByStep.Application.UseCases.Add
 {
     public class AddUseCase : IAddUseCase
     {
-        private readonly MountAddressHandler mountAddressHandler;
+        private readonly MountCustomerHandler mountCustomerHandler;
 
         public AddUseCase(MountAddressHandler mountAddressHandler, MountCustomerHandler mountCustomerHandler, SaveCustomerHandler saveCustomerHandler)
         {
-            mountAddressHandler.SetSucessor(mountCustomerHandler);
-            mountCustomerHandler.SetSucessor(saveCustomerHandler);
+            mountCustomerHandler.SetSucessor(mountAddressHandler);
+            mountAddressHandler.SetSucessor(saveCustomerHandler);
 
-            this.mountAddressHandler = mountAddressHandler;
+            this.mountCustomerHandler = mountCustomerHandler;
         }
 
         public void Execute(AddRequest request)
         {
-            mountAddressHandler.ProcessRequest(request);
+            mountCustomerHandler.ProcessRequest(request);
         }
     }
 }

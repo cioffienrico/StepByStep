@@ -1,38 +1,36 @@
 version: '3.7'
 
 services:
-  
-  project-db:
+  stepbystep.webapi:    
+    build:
+      context: .
+      dockerfile: StepByStep.Webapi/Dockerfile
+    environment:
+      CONN: Host=project-db.database;Port=5432;Database=postgres;User Id=postgres;Password=postgres;
+    ports:
+      - 8082:80      
+    networks:
+      - stepbystep-network
+    depends_on:
+      - project-db.database
+
+  project-db.database:
     image: postgres:9.5
     restart: always
     environment:  
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=postgres
     ports:
       - 5432:5432
     volumes:
       - pgdata:/var/lib/postgresql/data
     networks:
-      - project-net
-   
-  project-webapi:
-    build:
-      context: .
-      dockerfile: StepByStep.Webapi/Dockerfile
-    environment:
-     CONN: "Host=project-db;Port=5432;Database=postgres;User Id=postgres;Password=postgres"
-    ports:
-      - "5001:80"
-    depends_on:
-      - project-db
-    networks:
-      - project-net
+      - stepbystep-network
 
-volumes:
-  pgdata:
-  pgservers:
+volumes:  
+  pgdata:  
 
 networks:
-  project-net:
-
+  stepbystep-network:
+   
+  

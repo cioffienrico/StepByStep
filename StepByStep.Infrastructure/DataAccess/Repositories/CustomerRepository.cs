@@ -23,8 +23,7 @@ namespace StepByStep.Infrastructure.DataAccess.Repositorios
             using var context = new Context();
             var customerEntity = mapper.Map<Entities.Customer>(customer);
 
-            context.Customers.Add(customerEntity);
-
+            context.Customer.Add(customerEntity);
             var i = context.SaveChanges();
 
             return i > 0;
@@ -34,48 +33,55 @@ namespace StepByStep.Infrastructure.DataAccess.Repositorios
             using var context = new Context();
             var customerEntity = mapper.Map<List<Entities.Customer>>(customers);
 
-            context.Customers.AddRange(customerEntity);
+            context.Customer.AddRange(customerEntity);
 
             var i = context.SaveChanges();
 
             return i > 0;
         }
 
-        public bool UpdateClient(Customer customer)
+        public Customer UpdateClient(Customer customer)
         {
             using var context = new Context();
             var customerEntity = mapper.Map<Entities.Customer>(customer);
 
-            context.Customers.Update(customerEntity);
+            context.Customer.Update(customerEntity);
 
             var i = context.SaveChanges();
 
-            return i > 0;
+            return mapper.Map<Customer>(customer);
         }
 
-        public Customer SearchClient(string rg, string cpf)
+        public Customer GetClient(string rg, string cpf)
         {
             using var context = new Context();
-            var cliente = context.Customers.Include(s=>s.Adress).Where(w => (w.Cpf.Equals(cpf) || w.Rg.Equals(rg)) && w.Active).FirstOrDefault();
+            var customer = context.Customer
+                .Where(w => w.Cpf.Equals(cpf) || w.Rg.Equals(rg))
+                .Include(s=>s.Address)
+                .FirstOrDefault();
 
-            return mapper.Map<Customer>(cliente);
+            return mapper.Map<Customer>(customer);
+        }
+         //&& w.Active
+        public Customer GetByName(string nome)
+        {
+            using var context = new Context();
+            var customer = context.Customer
+                .Where(w => w.Name == nome)
+                .Include(s => s.Address)                
+                .FirstOrDefault();
+
+            return mapper.Map<Customer>(customer);
         }
 
-        public Customer SearchByName(string nome)
-        {
-            using var context = new Context();
-            var cliente = context.Customers.Include(s => s.Adress)
-                .Where(w => w.Name == nome).FirstOrDefault();
-
-            return mapper.Map<Customer>(cliente);
-        }
-
-        public Customer SearchById(Guid id)
+        public Customer GetById(Guid id)
         {
             using var context = new Context();
 
-            var customer = context.Customers.Include(s => s.Adress)
-                .Where(w => w.Id == id).FirstOrDefault();
+            var customer = context.Customer
+                .Where(w => w.Id == id)
+                .Include(s => s.Address)
+                .FirstOrDefault();
 
             return mapper.Map<Customer>(customer);
         }
@@ -83,24 +89,23 @@ namespace StepByStep.Infrastructure.DataAccess.Repositorios
         public List<Customer> GetAll()
         {
             using var context = new Context();
-            var customers = context.Customers.Include(s => s.Adress).ToList();
+            var customers = context.Customer.Include(s => s.Address).ToList();            
 
             return mapper.Map<List<Customer>>(customers);
         }
 
-        public bool DeleteClient(Customer customer)
+        public int Delete(Guid customerId)
         {
-            using var context = new Context();
+            using (Context context = new Context())
+            {
+                var model = mapper.Map<Entities.Customer>(context.Customer.Where(w => w.Id == customerId).FirstOrDefault());
 
-            var remover = context.Customers.Where(w => w.Id == customer.Id).FirstOrDefault();
-
-            context.Customers.Remove(remover);
-
-            var i = context.SaveChanges();
-
-            return i > 0;
+                context.Customer.Remove(model);
+                return context.SaveChanges();
+            }
         }
 
-        }
+
+    }
     }
 

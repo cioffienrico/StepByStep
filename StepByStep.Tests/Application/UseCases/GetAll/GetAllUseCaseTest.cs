@@ -9,7 +9,7 @@ using System.Text;
 using Xunit;
 using Xunit.Frameworks.Autofac;
 
-namespace StepByStep.Test.Application.UseCases.GetAll
+namespace StepByStep.Tests.Application.UseCases.GetAll
 {
     [UseAutofacTestFramework]
     public class GetAllUseCaseTest

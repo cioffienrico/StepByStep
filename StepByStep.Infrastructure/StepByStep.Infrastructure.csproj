@@ -23,5 +23,9 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\StepByStep.Application\StepByStep.Application.csproj" />
 	  <ProjectReference Include="..\StepByStep.Domain\StepByStep.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="DataAccess\Migrations\" />
 	</ItemGroup>	
 </Project>

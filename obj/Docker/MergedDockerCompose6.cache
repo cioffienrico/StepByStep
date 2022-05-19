@@ -1,0 +1,89 @@
+networks:
+  project-net: {}
+  stepbystep-network: {}
+services:
+  project-db.database:
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    image: postgres:9.5
+    networks:
+      stepbystep-network: {}
+    ports:
+    - published: 5432
+      target: 5432
+    restart: always
+    volumes:
+    - pgdata:/var/lib/postgresql/data:rw
+  project-webapi:
+    build:
+      context: C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep
+      dockerfile: StepByStep.WebApi/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: StepByStep.WebApi
+      target: base
+    container_name: StepByStep.WebApi
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: stepbystepwebapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/StepByStep.WebApi.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      project-net: {}
+    tty: true
+    volumes:
+    - C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.WebApi:/app:rw
+    - C:\Users\PC\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\PC\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\PC\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\PC\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep:/src:rw
+  stepbystep.webapi:
+    build:
+      context: C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep
+      dockerfile: StepByStep.Webapi/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: StepByStep.WebApi
+      target: base
+    container_name: StepByStep.WebApi_1
+    depends_on:
+      project-db.database:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      CONN: Host=project-db.database;Port=5432;Database=postgres;User Id=postgres;Password=postgres;
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: stepbystepwebapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/StepByStep.WebApi.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      stepbystep-network: {}
+    ports:
+    - published: 8082
+      target: 80
+    tty: true
+    volumes:
+    - C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep\StepByStep.Webapi:/app:rw
+    - C:\Users\PC\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\PC\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\PC\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\PC\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\PC\Desktop\Visual Studio\Projetos\StepByStep:/src:rw
+version: '3.7'
+volumes:
+  pgdata: {}

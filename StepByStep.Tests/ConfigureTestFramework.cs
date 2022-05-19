@@ -4,8 +4,8 @@ using Xunit;
 using Xunit.Abstractions;
 using Xunit.Frameworks.Autofac;
 
-[assembly: TestFramework("StepByStep.Test.ConfigureTestFramework", "StepByStep.Test")]
-namespace StepByStep.Test
+[assembly: TestFramework("StepByStep.Tests.ConfigureTestFramework", "StepByStep.Tests")]
+namespace StepByStep.Tests
 {
     public class ConfigureTestFramework : AutofacTestFramework
     {

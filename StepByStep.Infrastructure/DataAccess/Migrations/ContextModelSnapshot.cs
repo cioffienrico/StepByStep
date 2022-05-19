@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
+using StepByStep.Infrastructure;
 
 namespace StepByStep.Infrastructure.DataAccess.Migrations
 {
@@ -18,6 +19,51 @@ namespace StepByStep.Infrastructure.DataAccess.Migrations
                 .HasAnnotation("ProductVersion", "3.1.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
+            modelBuilder.Entity("StepByStep.Infrastructure.DataAccess.Entities.Address", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Cep")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Complement")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Neighborhood")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Number")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Road")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("State")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerId")
+                        .IsUnique();
+
+                    b.ToTable("Address","Public");
+                });
+
             modelBuilder.Entity("StepByStep.Infrastructure.DataAccess.Entities.Customer", b =>
                 {
                     b.Property<Guid>("Id")
@@ -31,65 +77,30 @@ namespace StepByStep.Infrastructure.DataAccess.Migrations
                         .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Cpf")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("RegisterDate")
                         .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Rg")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customer","public");
+                    b.ToTable("Customer","Public");
                 });
 
-            modelBuilder.Entity("StepByStep.Infrastructure.DataAccess.Entities.Adress", b =>
+            modelBuilder.Entity("StepByStep.Infrastructure.DataAccess.Entities.Address", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Neighborhood")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Cep")
-                        .HasColumnType("text");
-
-                    b.Property<string>("City")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Complement")
-                        .HasColumnType("text");
-
-                    b.Property<Guid>("CustomerId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("State")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Number")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Road")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CustomerId")
-                        .IsUnique();
-
-                    b.ToTable("Adress","public");
-                });
-
-            modelBuilder.Entity("StepByStep.Infrastructure.DataAccess.Entities.Adress", b =>
-                {
-                    b.HasOne("StepByStep.Infrastructure.DataAccess.Entities.Customer", null)
-                        .WithOne("adress")
-                        .HasForeignKey("StepByStep.Infrastructure.DataAccess.Entities.Adress", "CustomerId")
+                    b.HasOne("StepByStep.Infrastructure.DataAccess.Entities.Customer", "Customer")
+                        .WithOne("Address")
+                        .HasForeignKey("StepByStep.Infrastructure.DataAccess.Entities.Address", "CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

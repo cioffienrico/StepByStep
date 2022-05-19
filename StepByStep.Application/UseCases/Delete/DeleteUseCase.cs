@@ -16,7 +16,7 @@ namespace StepByStep.Application.UseCases.Delete
 
         public bool Execute(DeleteRequest request)
         {
-            var customer = customerRepository.SearchById(request.Id);
+            var customer = customerRepository.GetById(request.Id);
 
             if (customer == null)
                 return false;

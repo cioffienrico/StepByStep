@@ -8,7 +8,7 @@ using System.Text;
 using Xunit;
 using Xunit.Frameworks.Autofac;
 
-namespace StepByStep.Test.Application.UseCases.GetById
+namespace StepByStep.Tests.Application.UseCases.GetById
 {
     [UseAutofacTestFramework]
     public class GetByIdUseCaseTest

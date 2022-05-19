@@ -13,7 +13,6 @@ namespace StepByStep.Infrastructure.Modules
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<CustomerRepository>().As<ICustomerRepository>().AsImplementedInterfaces().AsSelf();
 
             Mapper(builder);
             Database(builder);

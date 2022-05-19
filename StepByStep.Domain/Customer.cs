@@ -13,8 +13,8 @@ namespace StepByStep.Domain
         public string Cpf { get; private set; }
         public DateTime RegisterDate { get; private set; }
         public bool Active { get; private set; }
-        public Address Address { get; private set; }        
-        public Customer(Guid id, string name, DateTime birthday, string rg, string cpf, DateTime registerDate, Address adress, bool active)
+        public virtual Address Address { get; set; }        
+        public Customer(Guid id, string name, DateTime birthday, string rg, string cpf, DateTime registerDate, bool active)
         {
             Id = id;
             Name = name;
@@ -23,7 +23,7 @@ namespace StepByStep.Domain
             Cpf = cpf;
             RegisterDate = registerDate;
             Active = active;
-            Address = adress;
+            
             Validate(this, new CustomerValidator());
         }
     }

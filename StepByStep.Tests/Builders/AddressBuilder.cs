@@ -1,9 +1,9 @@
 ﻿using StepByStep.Domain;
 using System;
 
-namespace StepByStep.Test.Builders
+namespace StepByStep.Tests.Builders
 {
-    public class AdressBuilder
+    public class AddressBuilder
     {
         public Guid Id;
         public Guid CustomerId;
@@ -16,11 +16,12 @@ namespace StepByStep.Test.Builders
         public string State;
 
 
-        public static AdressBuilder New()
+        public static AddressBuilder New()
         {
-            return new AdressBuilder()
+            return new AddressBuilder()
             {
                 Id = Guid.NewGuid(),
+                CustomerId = Guid.NewGuid(),
                 Cep = "06026000",
                 Road = "Victor Brecheret",
                 Number = "520",
@@ -31,54 +32,59 @@ namespace StepByStep.Test.Builders
             };
         }
 
-        public AdressBuilder WithId(Guid id)
+        public AddressBuilder WithId(Guid id)
         {
             Id = id;
             return this;
         }
-        public AdressBuilder WithCep(string cep)
+        public AddressBuilder WithCustomerId(Guid customerId)
+        {
+            CustomerId = customerId;
+            return this;
+        }
+        public AddressBuilder WithCep(string cep)
         {
             Cep = cep;
             return this;
         }
 
-        public AdressBuilder WithRoad(string road)
+        public AddressBuilder WithRoad(string road)
         {
             Road = road;
             return this;
         }
 
-        public AdressBuilder WithNumber(string number)
+        public AddressBuilder WithNumber(string number)
         {
             Number = number;
             return this;
         }
 
-        public AdressBuilder WithComplement(string complement)
+        public AddressBuilder WithComplement(string complement)
         {
             Complement = complement;
             return this;
         }
 
-        public AdressBuilder WithNeighborhood(string neighborhood)
+        public AddressBuilder WithNeighborhood(string neighborhood)
         {
             Neighborhood = neighborhood;
             return this;
         }
 
-        public AdressBuilder WithCity(string city)
+        public AddressBuilder WithCity(string city)
         {
             City = city;
             return this;
         }
 
-        public AdressBuilder WithState(string state)
+        public AddressBuilder WithState(string state)
         {
             State = state;
             return this;
         }
 
-        public Address Build() => new Address(Id, Cep, Road, Number, Complement, Neighborhood, City, State);
+        public Address Build() => new Address(Id, CustomerId, Cep, Road, Number, Complement, Neighborhood, City, State);
 
     }
 }

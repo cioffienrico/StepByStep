@@ -8,7 +8,7 @@ namespace StepByStep.Application.UseCases.Add.RequestHandlers
     {
         public override void ProcessRequest(AddRequest request)
         {
-            request.Customer = new Customer(Guid.NewGuid(), request.Name, request.Birthday, request.Rg, request.Cpf, DateTime.Now, request.Adress, true);
+            request.Customer = new Customer(Guid.NewGuid(), request.Name, request.Birthday, request.Rg, request.Cpf, DateTime.Now, true);
 
             if (!request.Customer.IsValid)
             {

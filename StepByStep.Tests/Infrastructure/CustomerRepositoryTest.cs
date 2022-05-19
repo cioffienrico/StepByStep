@@ -1,17 +1,21 @@
 ﻿using FluentAssertions;
 using StepByStep.Application.Repositories;
-using StepByStep.Test.Builders;
+using StepByStep.Infrastructure;
 using StepByStep.Tests.Builders;
+using StepByStep.Tests.TestCaseOrdering;
+using System;
 using Xunit;
 using Xunit.Frameworks.Autofac;
 
-namespace StepByStep.Test.Infrastructure
+namespace StepByStep.Tests.Infrastructure
 {
+    [TestCaseOrderer("StepByStep.Tests.TestCaseOrdering.PriorityOrderer", "StepByStep.Tests")]
     [UseAutofacTestFramework]
     public class CustomerRepositoryTest
     {
         private readonly ICustomerRepository customerRepository;
-
+        private static Guid Id1;
+        private static string Id2;
         public CustomerRepositoryTest(ICustomerRepository customerRepository)
         {
             this.customerRepository = customerRepository;
@@ -19,32 +23,61 @@ namespace StepByStep.Test.Infrastructure
 
 
         [Fact]
+        [TestPriority(0)]
         public void DeveAdicionarUmClienteNovoNoBanco()
         {
-            var customer = CustomerBuilder.New().WithRg("223431485").WithCpf("84023371041").Build();
-
+            var customer = CustomerBuilder.New().Build();
+            Id1 = customer.Id;
+            Id2 = customer.Name;
             var retorno = customerRepository.AddClient(customer);
-            var client = customerRepository.SearchByName(customer.Name);
 
             retorno.Should().BeTrue();
-            client.Should().NotBeNull();
         }
 
         [Fact]
-        public void DeveAtualizarUmClienteNovoNoBanco()
+        [TestPriority(1)]
+        public void ShouldGetCustomerById()
         {
-            var customer = CustomerBuilder.New().WithRg("163785892").WithCpf("55829931001").Build();
-            var adress = AdressBuilder.New().WithId(customer.Address.Id).Build();
+            var result = customerRepository.GetById(Id1);
 
-            customerRepository.AddClient(customer);
-
-            customer = CustomerBuilder.New().WithId(customer.Id).WithName("Teste atualizar").WithAdress(adress).Build();
-
-            var retorno1 = customerRepository.UpdateClient(customer);
-            var a = customerRepository.SearchByName("Teste atualizar");
-
-            retorno1.Should().BeTrue();
-            a.Should().NotBeNull();
+            result.Should().NotBeNull();
         }
+
+        [Fact]
+        [TestPriority(1)]
+        public void ShouldGetCustomerByName()
+        {
+            var result = customerRepository.GetByName(Id2);
+
+            result.Should().NotBeNull();
+        }
+
+        [Fact]
+        [TestPriority(1)]
+        public void ShouldGetAllCustomers()
+        {
+            var customers = customerRepository.GetAll();
+            customers.Should().HaveCountGreaterThan(0);
+        }
+
+        [Fact]
+        [TestPriority(2)]
+        public void ShouldUpdateCustomer()
+        {
+            var customer = CustomerBuilder.New().WithId(Id1).WithName("Wellington").Build();
+            var result = customerRepository.UpdateClient(customer);
+
+            result.Should().NotBeNull();
+        }
+
+        [Fact]
+        [TestPriority(3)]
+        public void ShouldDeleteAccountDetail()
+        {
+            int result = customerRepository.Delete(Id1);
+
+            result.Should().BeGreaterThan(0);
+        }
+
     }
 }

@@ -8,11 +8,11 @@ namespace StepByStep.Application.Repositories
     {
         bool AddClient(Customer customer);
         bool AddClients(List<Customer> customers);
-        bool UpdateClient(Customer customer);
+        Customer UpdateClient(Customer customer);
         List<Customer> GetAll();
-        Customer SearchByName(string name);
-        Customer SearchById(Guid id);
-        Customer SearchClient(string Rg, string Cpf);
-        bool DeleteClient(Customer customer);
+        Customer GetByName(string name);
+        Customer GetClient(string cpf, string rg);
+        Customer GetById(Guid id);
+        int Delete(Guid customerId);
     }
 }
