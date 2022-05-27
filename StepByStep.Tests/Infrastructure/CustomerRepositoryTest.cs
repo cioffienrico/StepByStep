@@ -67,7 +67,7 @@ namespace StepByStep.Tests.Infrastructure
             var customer = CustomerBuilder.New().WithId(Id1).WithName("Wellington").Build();
             var result = customerRepository.UpdateClient(customer);
 
-            result.Should().NotBeNull();
+            result.Should().BeTrue();
         }
 
         [Fact]

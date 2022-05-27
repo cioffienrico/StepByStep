@@ -40,7 +40,7 @@ namespace StepByStep.Infrastructure.DataAccess.Repositorios
             return i > 0;
         }
 
-        public Customer UpdateClient(Customer customer)
+        public bool UpdateClient(Customer customer)
         {
             using var context = new Context();
             var customerEntity = mapper.Map<Entities.Customer>(customer);
@@ -49,7 +49,7 @@ namespace StepByStep.Infrastructure.DataAccess.Repositorios
 
             var i = context.SaveChanges();
 
-            return mapper.Map<Customer>(customer);
+            return i > 0;
         }
 
         public Customer GetClient(string rg, string cpf)

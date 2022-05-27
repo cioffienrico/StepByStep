@@ -1,30 +1,22 @@
-﻿using StepByStep.Application.Repositories;
-using StepByStep.Application.UseCases.Update;
-using StepByStep.Domain;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using StepByStep.Application.UseCases.Update.Handlers;
 
 namespace StepByStep.Application.UseCases.Update
 {
     public class UpdateUseCase : IUpdateUseCase
     {
-        private readonly ICustomerRepository customerRepository;
+        private readonly UpdateCustomerHandler updateCustomerHandler;
 
-        public UpdateUseCase(ICustomerRepository customerRepository)
+        public UpdateUseCase(UpdateAddressHandler updateAddressHandler, UpdateCustomerHandler updateCustomerHandler, SaveUpdatedCustomerHandler saveUpdatedCustomerHandler)
         {
-            this.customerRepository = customerRepository;
+            updateCustomerHandler.SetSucessor(updateAddressHandler);
+            updateAddressHandler.SetSucessor(saveUpdatedCustomerHandler);
+
+            this.updateCustomerHandler = updateCustomerHandler;
         }
 
-        public Customer Execute(UpdateRequest request)
+        public void Execute(UpdateRequest request)
         {
-            var customer = customerRepository.GetById(request.Id);
-
-            var customerUpdate = new Customer(customer.Id, request.Name, request.Birthday, request.Rg, request.Cpf, customer.RegisterDate, customer.Active);
-
-            var updated = customerRepository.UpdateClient(customerUpdate);
-
-            return updated;
+            updateCustomerHandler.ProcessRequest(request);
         }
     }
 }

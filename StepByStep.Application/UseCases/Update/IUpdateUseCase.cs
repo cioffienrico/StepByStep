@@ -8,7 +8,7 @@ namespace StepByStep.Application.UseCases.Update
 {
     public interface IUpdateUseCase
     {
-        Customer Execute(UpdateRequest request);
+        void Execute(UpdateRequest request);
 
     }
 }

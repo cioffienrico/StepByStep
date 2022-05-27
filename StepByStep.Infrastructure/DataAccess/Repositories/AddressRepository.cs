@@ -28,7 +28,7 @@ namespace StepByStep.Infrastructure.DataAccess.Repositories
 
             return i > 0;
         }
-        
+
         public bool Update(Address address)
         {
             using var context = new Context();
@@ -40,7 +40,6 @@ namespace StepByStep.Infrastructure.DataAccess.Repositories
 
             return i > 0;
         }
-
 
         public Address GetById(Guid id)
         {

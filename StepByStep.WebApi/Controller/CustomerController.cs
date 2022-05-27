@@ -84,7 +84,14 @@ namespace StepByStep.Webapi.Controllers
         [Route("Update")]
         public IActionResult UpdateCustomer([FromBody] CustomerUpdateInput updateInput)
         {    
-            var update = updateUseCase.Execute(new UpdateRequest(updateInput.Id, updateInput.Name, updateInput.Birthday, updateInput.Rg, updateInput.Cpf, updateInput.Cep, updateInput.Road, updateInput.Number, updateInput.Complement, updateInput.Neighborhood, updateInput.City, updateInput.State));
+            var update = (new UpdateRequest(updateInput.Id, updateInput.Name, updateInput.Birthday, updateInput.Rg, updateInput.Cpf, updateInput.Cep, updateInput.Road, updateInput.Number, updateInput.Complement, updateInput.Neighborhood, updateInput.City, updateInput.State));
+
+            updateUseCase.Execute(update);
+
+            /*if (!update.Customer.IsValid)
+            {
+                return BadRequest(update.Erros);
+            }*/
 
             return Ok(update.Id);
         }

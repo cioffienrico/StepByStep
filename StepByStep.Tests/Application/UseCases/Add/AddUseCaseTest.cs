@@ -30,7 +30,7 @@ namespace StepByStep.Tests.Application.UseCases.Add
 
             addUseCase.Execute(request);
 
-            var cliente = customerRepository.GetByName(request.Name);
+            var cliente = customerRepository.GetClient(request.Cpf, request.Rg);
 
             request.Erros.Should().BeNullOrEmpty();
 
@@ -56,22 +56,5 @@ namespace StepByStep.Tests.Application.UseCases.Add
             cliente.Should().BeNull();
         }
 
-        [Fact]
-        public void NaoDeveAdicionarUmClienteQueJaExiste()
-        {
-
-            var clienteExistente = CustomerBuilder.New().WithCpf("860.868.860-32").WithRg("44.774.404-5").Build();
-            customerRepository.AddClient(clienteExistente);
-
-            var request = new AddRequest("", new DateTime(1993, 5, 27), "", "860.868.860-32", "04571936", "Av. Engenheiro Luís Carlos Berrini", "1376", "", "Cidade Monções", "São Paulo", "São Paulo");
-
-            addUseCase.Execute(request);
-
-            var cliente = customerRepository.GetClient(request.Rg, request.Cpf);
-
-            request.Erros.Should().NotBeNullOrEmpty().And.Contain("Já existe um cliente com esse rg: " + request.Rg + ", ou com esse cpf: " + request.Cpf);
-
-            cliente.Should().NotBeNull();
-        }
     }
 }

@@ -21,6 +21,7 @@ namespace StepByStep.Application.UseCases.Update
         public string State { get; private set; }
         public Address Address { get; set; }
         public Customer Customer { get; set; }
+        public List<string> Erros { get; set; }
 
         public UpdateRequest(Guid id, string name, DateTime birthday, string rg, string cpf, string cep, string road, string number, string complement, string neighborhood, string city, string state)
         {
@@ -36,7 +37,7 @@ namespace StepByStep.Application.UseCases.Update
             Neighborhood = neighborhood;
             City = city;
             State = state;
-
+            Erros = new List<string>();
 
 
 
